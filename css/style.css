@@ -1,6 +1,7 @@
 @font-face{
     font-family: 'Museo Cyrl';
     font-style: normal;
+    font-display: swap;
     src: url(../fonts/MuseoCyrl300.woff2) format('woff2'),
          url(../fonts/MuseoCyrl300.woff) format('woff'),
          url(../fonts/MuseoCyrl500.woff2) format('woff2'),
@@ -491,6 +492,8 @@ main{
 
 .header-column__link img{
     margin-right: 15px;
+    width: 30px;
+    height: 30px;
 }
 
 .header-link__text {
@@ -1230,6 +1233,7 @@ button:hover:disabled{
 }
 
 .checkbox__text-average{
+    display: block;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -1247,11 +1251,14 @@ button:hover:disabled{
 }
 .checkbox__text,
 .checkbox__text-descriptions {
+    display: block;
 	position: relative;
 	padding: 0 0 0 60px;
 	cursor: pointer;
     color: #747474;
 }
+   
+
 .checkbox__text-descriptions{
     display: flex;
     justify-content: space-between;
