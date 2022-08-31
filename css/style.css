@@ -18,22 +18,13 @@ body {
     min-height: 100%;
     scroll-behavior: smooth;
   }
-html::-webkit-scrollbar {
-    width: 5px; /* ширина для вертикального скролла */
-    height: 0px; /* высота для горизонтального скролла */
-    background-color: rgb(255, 255, 255); /* цвет фона */
-    border-radius: 10px;
-}
-html::-webkit-scrollbar-thumb {
-    background-color: rgba(225, 183, 135, 1);
-    border-radius: 10px;
-}
 
 *, *:before, *:after {
     box-sizing: inherit;
   }
 
 body{
+    min-width: 320px;
     font-family: 'Museo Cyrl', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -43,12 +34,12 @@ body{
     cursor: default;
 }
 
-body{
+.wrapper{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
 }
-main{
+.main{
     flex: 1 1 auto;
 }
 
@@ -102,7 +93,6 @@ a{
     font-family: inherit;
     color: #ffffff;
     display: inline-block;
-    cursor: pointer;
     text-decoration: none;
 }
 
@@ -323,7 +313,6 @@ button{
     align-items: center;
     width: 133px;
     height: 30px;
-    cursor: pointer;
 }
 .logo img{
     width: 100%;
@@ -508,7 +497,7 @@ main{
 }
 
 .menu{
-    padding: 70px 20px 20px;
+    padding: 70px 10px 20px;
 }
 
 .pagination__list {
@@ -607,15 +596,12 @@ button:hover:disabled{
 }
 
 .menu__body {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 -10px;
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
 }
-.menu__column {
-    width: 100%;
-    max-width: 360px;
-    padding: 0 10px;
+.recommend .menu__column {
     margin: 0 10px 50px;
     position: relative;
 }
@@ -923,7 +909,9 @@ button:hover:disabled{
 }
 
 .delivery-menu {
-    margin-bottom: 50px;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto 50px;
 }
 .delivery-menu .slick-track{
     display: flex;
@@ -982,6 +970,9 @@ button:hover:disabled{
 }
 
 .delivery-description{
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
     background-color: #f5f3f3;
     padding: 30px;
 }
