@@ -13,19 +13,159 @@
     <div class="wrapper">
 
         <div class="header__content">
-            <div class="header__burger">
+
+            <header class="header">
+                <div class="container">
+                    <div class="header__body">
+
+                        <div class="logo">
+                            <a class="logo-svg__link" href="index.html">
+                                <img src="images/logo.svg" alt="Логотип компании MAFIA">
+                            </a>
+                        </div>
+
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#contacts" class="header-list__link popup-link">
+                                    Контакты
+                                </a>
+                                <!-- modal-start -->
+                                <div id="contacts" class="popup contacts info" role="alert">
+                                    <div class="popup__body">
+                                        <div class="popup__content info__content">
+                                            <button type="button" class="popup__close close-popup"
+                                                aria-label="закрыть модальное окно"></button>
+
+                                            <ul class="contacts__list">
+                                                <li class="contacts__item">
+                                                    <a href="tel:380577520330" aria-label="Позвонить нам"
+                                                        class="contacts__link">
+                                                        (380) 577-520-330
+                                                    </a>
+                                                </li>
+                                                <li class="contacts__item">
+                                                    <a href="tel:(380) 107-522-300" aria-label="Позвонить нам"
+                                                        class="contacts__link">
+                                                        (380) 107-522-300
+                                                    </a>
+                                                </li>
+                                                <li class="contacts__item">
+                                                    <a href="tel:380517522331" aria-label="Позвонить нам"
+                                                        class="contacts__link">
+                                                        (380) 517-522-331
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal-end -->
+                            </li>
+                            <li class="header__item">
+                                <a href="#myself" class="header-list__link  _take-away popup-link">
+                                    Заберу сам 1+1
+                                </a>
+                                <!-- modal-start -->
+                                <div id="myself" class="popup myself info" role="alert">
+                                    <div class="popup__body">
+                                        <div class="popup__content info__content">
+                                            <button type="button" class="popup__close close-popup"
+                                                aria-label="закрыть модальное окно"></button>
+
+                                            <form class="myself__form" action="#" method="post">
+
+                                                <label class="myself__label">
+                                                    <input type="text" name="myself__client" placeholder="Ваше имя">
+                                                </label>
+
+                                                <label class="myself__label">
+                                                    <input type="tel" name="myself__phone" placeholder="Номер телефона">
+                                                </label>
+
+                                                <p class="myself__text">
+                                                    Мы свяжемся с вами для уточнения заказа
+                                                </p>
+
+                                                <button class="myself__btn btn">Отправить</button>
+
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal-end -->
+                            </li>
+                            <li class="header__item">
+                                <a href="#track-order" class="header-list__link  _track-order popup-link">
+                                    Отследить заказ
+                                </a>
+                                <!-- modal-start -->
+                                <div id="track-order" class="popup track-order info" role="alert">
+                                    <div class="popup__body">
+                                        <div class="popup__content info__content">
+                                            <button type="button" class="popup__close close-popup"
+                                                aria-label="закрыть модальное окно"></button>
+
+                                            <h2 class="track-order__title">
+                                                Отследить заказ
+                                            </h2>
+
+                                            <form class="track-order__form" action="#" method="post">
+
+                                                <label class="track-order__label">
+                                                    <span class="track-order__text">
+                                                        Введите номер телефона на который был оформлен заказ
+                                                    </span>
+                                                    <input class="track-order__input" type="tel" name="track-order">
+                                                </label>
+
+                                                <button class="btn track-order__btn">
+                                                    Отследить заказ
+                                                </button>
+
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal-end -->
+                            </li>
+                        </ul>
+
+                        <div class="basket">
+                            <div class="basket__images">
+                                <a class="backet__link-svg">
+                                    <span class="basket__text">Корзина</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="32"
+                                        height="26" fill="#ffffff">
+                                        <path
+                                            d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z" />
+                                        <circle cx="7" cy="22" r="2" />
+                                        <circle cx="17" cy="22" r="2" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <button type="button" aria-label="Меню открыть закрыть" class="header__burger">
                 <span></span>
-            </div>
+            </button>
+
             <nav class="header__nav nav">
                 <ul class="nav__list-content">
-    
+
                     <li class="nav__item">
                         <h2 class="nav__link-title">
                             Меню доставки
                         </h2>
                         <ul class="nav__list-ineer">
                             <li class="nav__item-inner">
-                                <a href="pizza.html" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Пицца и пинца
                                 </a>
                             </li>
@@ -40,7 +180,7 @@
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a class="nav__link-inner">
+                                <a href="burgers.html" class="nav__link-inner">
                                     Бургеры и закуски
                                 </a>
                             </li>
@@ -75,184 +215,134 @@
                                 </a>
                             </li>
                         </ul>
-                   </li>
-    
+                    </li>
+
                     <li class="nav__item">
                         <h2 class="nav__link-title">
                             Для детей
                         </h2>
                         <ul class="nav__list-ineer">
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Клуб поварят
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Детская комната
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Детский день рождения
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Детское меню
                                 </a>
                             </li>
                         </ul>
-                   </li>
-    
+                    </li>
+
                     <li class="nav__item">
                         <h2 class="nav__link-title">
                             Информация
                         </h2>
                         <ul class="nav__list-ineer">
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Условия доставки
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Бонусная программа
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Услуга "1+1 Забери сам"
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Подарочные карты
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Ваш праздник в MAFIA
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     День рождения в MAFIA
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Организация праздников
                                 </a>
                             </li>
                         </ul>
-                   </li>
-    
+                    </li>
+
                     <li class="nav__item">
                         <h2 class="nav__link-title">
                             Компания
                         </h2>
                         <ul class="nav__list-ineer">
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     О компании
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Вакансии
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Партнерам
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Реклама в MAFIA
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="#" class="nav__link-inner">
+                                <a class="nav__link-inner">
                                     Пользовательское соглашение
                                 </a>
                             </li>
                         </ul>
-                   </li>
-    
-                   <li class="nav__item">
+                    </li>
+
+                    <li class="nav__item">
                         <h2 class="nav__link-title">
                             Контакты
                         </h2>
                         <ul class="nav__list-ineer">
                             <li class="nav__item-inner">
-                                <a href="tel:+380577520330" class="nav__link-inner">
-                                    (057) 752-03-30
+                                <a href="tel:+380577520330" aria-label="Позвонить нам" class="nav__link-inner">
+                                    (380) 577-520-330
                                 </a>
                             </li>
                             <li class="nav__item-inner">
-                                <a href="tel:+380983373939" class="nav__link-inner">
-                                    (098) 337-39-39
+                                <a href="tel:+38098337939" aria-label="Позвонить нам" class="nav__link-inner">
+                                    (380) 098-337-939
                                 </a>
                             </li>
                         </ul>
-                   </li>
-    
-                   <li class="nav__item">
-                        <a class="nav__link" href="#">Заберу сам</a>
-                   </li>
-    
-                   <li class="nav__item">
-                        <a class="nav__link" href="#">Отследить заказ</a>
-                   </li>
+                    </li>
                 </ul>
             </nav>
-            <header class="header">
-                <div class="container">
-                    <div class="header__body">
-    
-                        <div class="logo">
-                            <a class="logo-svg__link" href="index.html">
-                                <img src="images/logo.svg" alt="Логотип компании MAFIA">
-                            </a>
-                        </div>
-    
-                        <ul class="header__list">
-                            <li class="header__item">
-                                <a href="#" class="header-list__link">
-                                    Контакты
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="#" class="header-list__link  _take-away">
-                                    Заберу сам 1+1
-                                </a>
-                            </li>
-                            <li class="header__item">
-                                <a href="#" class="header-list__link  _track-order">
-                                    Отследить заказ
-                                </a>
-                            </li>
-                        </ul>
-    
-                        <div class="basket">
-                            <div class="basket__images">
-                                <a class="backet__link-svg" href="#">
-                                    <span class="basket__text">Корзина</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="32" height="26" fill="#ffffff">
-                                        <path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/>
-                                        <circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-            </header>
+
         </div>
-        
+
         <div class="header-column">
             <ul class="header-column__list">
                 <li class="header-column__item">
@@ -337,7 +427,7 @@
                 </li>
             </ul>
         </div>
-    
+
         <main class="main">
             <section class="tabs__container">
                 <div class="menu-description">
@@ -363,9 +453,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            
+
                             <div class="menu__body">
-    
+
                                 <div class="menu__column">
                                     <div class="menu__service">
                                         <span class="menu-service__span">Акция</span>
@@ -374,15 +464,60 @@
                                         <span class="menu-service__span menu-service__span-hit">Хит</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#burgers-1" class="menu__images-link">
+                                        <a href="#burgers-1" class="menu__images-link popup-link">
                                             <figure class="menu__images">
                                                 <img src="images/burgers/burgers-1.jpg" alt="Фирменный бургер Мафия">
                                             </figure>
                                         </a>
+                                        <!-- modal-start -->
+                                        <div id="burgers-1" class="popup" role="alert">
+                                            <div class="popup__body">
+                                                <div class="popup__content">
+                                                    <button type="button" class="popup__close close-popup"
+                                                        aria-label="закрыть модальное окно"></button>
+
+                                                    <div class="popup__item-box">
+                                                        <figure class="popup__images">
+                                                            <img src="images/burgers/burgers-1.jpg"
+                                                                alt="Фирменный бургер Мафия">
+                                                        </figure>
+
+                                                        <div class="popup__info">
+                                                            <h2 class="popup__title">
+                                                                Фирменный бургер "Мафия"
+                                                            </h2>
+                                                            <h4 class="popup__subtitle">
+                                                                Ингредиенты
+                                                            </h4>
+                                                            <p class="popup__info-text">
+                                                                Котлета из говядины, сыр чеддер плавленый, салат ромэн,
+                                                                томаты, маринованный огурец, вешенки-гриль, соус BBQ,
+                                                                картофель фри, соус тартар
+                                                            </p>
+                                                            <div class="menu__price">
+                                                                <div class="menu__price">
+                                                                    <div class="menu__price-stock">
+                                                                        190 руб
+                                                                    </div>
+                                                                    <div>320 руб</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="menu-btn__row">
+                                                        <button class="menu-btn" type="submit">
+                                                            В корзину
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- modal-end -->
                                         <h3 class="menu__title">
-                                            <a href="#burgers-1" class="menu__title-link">
-                                                Фирменный бургер "Мафия"
-                                            </a>
+
+                                            Фирменный бургер "Мафия"
+
                                         </h3>
                                         <div class="menu__subtitle">
                                             <span class="menu-span__weight">
@@ -390,14 +525,15 @@
                                             </span>
                                         </div>
                                         <div class="menu__description">
-                                            Котлета из говядины, сыр чеддер плавленый, салат ромэн, томаты, маринованный огурец, вешенки-гриль, соус BBQ, картофель фри, соус тартар
+                                            Котлета из говядины, сыр чеддер плавленый, салат ромэн, томаты, маринованный
+                                            огурец, вешенки-гриль, соус BBQ, картофель фри, соус тартар
                                         </div>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
                                             <div class="menu__price">
                                                 <div class="menu__price">
                                                     <div class="menu__price-stock">
-                                                         190 руб
+                                                        190 руб
                                                     </div>
                                                     <div>320 руб</div>
                                                 </div>
@@ -408,19 +544,61 @@
                                         </div>
                                     </div>
                                 </div>
-    
-    
+
+
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#burgers-2" class="menu__images-link">
+                                        <a href="#burgers-2" class="menu__images-link popup-link">
                                             <figure class="menu__images">
                                                 <img src="images/burgers/burgers-2.jpg" alt="Нью Йорк бургер">
                                             </figure>
                                         </a>
+                                        <!-- modal-start -->
+                                        <div id="burgers-2" class="popup" role="alert">
+                                            <div class="popup__body">
+                                                <div class="popup__content">
+                                                    <button type="button" class="popup__close close-popup"
+                                                        aria-label="закрыть модальное окно"></button>
+
+                                                    <div class="popup__item-box">
+                                                        <figure class="popup__images">
+                                                            <img src="images/burgers/burgers-2.jpg"
+                                                                alt="Нью Йорк бургер">
+                                                        </figure>
+
+                                                        <div class="popup__info">
+                                                            <h2 class="popup__title">
+                                                                Нью Йорк бургер
+                                                            </h2>
+                                                            <h4 class="popup__subtitle">
+                                                                Ингредиенты
+                                                            </h4>
+                                                            <p class="popup__info-text">
+                                                                Котлета из говядины, бекон, сыр чеддер плавленый, салат
+                                                                ромэн, томаты, соус тартар, картофель фри, пикантный
+                                                                соус
+                                                            </p>
+                                                            <div class="menu__price">
+
+                                                                <div>330 руб</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="menu-btn__row">
+                                                        <button class="menu-btn" type="submit">
+                                                            В корзину
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- modal-end -->
                                         <h3 class="menu__title">
-                                            <a href="#burgers-2" class="menu__title-link">
-                                                Нью Йорк бургер
-                                            </a>
+
+                                            Нью Йорк бургер
+
                                         </h3>
                                         <div class="menu__subtitle">
                                             <span class="menu-span__weight">
@@ -428,7 +606,8 @@
                                             </span>
                                         </div>
                                         <div class="menu__description">
-                                            Котлета из говядины, бекон, сыр чеддер плавленый, салат ромэн, томаты, соус тартар, картофель фри, пикантный соус
+                                            Котлета из говядины, бекон, сыр чеддер плавленый, салат ромэн, томаты, соус
+                                            тартар, картофель фри, пикантный соус
                                         </div>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
@@ -441,22 +620,63 @@
                                         </div>
                                     </div>
                                 </div>
-    
-    
+
+
                                 <div class="menu__column">
                                     <div class="menu__service">
                                         <span class="menu-service__span menu-service__span-green">Новинка</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#burgers-3" class="menu__images-link">
+                                        <a href="#burgers-3" class="menu__images-link popup-link">
                                             <figure class="menu__images">
                                                 <img src="images/burgers/burgers-3.jpg" alt="Роял бургер">
                                             </figure>
                                         </a>
+                                        <!-- modal-start -->
+                                        <div id="burgers-3" class="popup" role="alert">
+                                            <div class="popup__body">
+                                                <div class="popup__content">
+                                                    <button type="button" class="popup__close close-popup"
+                                                        aria-label="закрыть модальное окно"></button>
+
+                                                    <div class="popup__item-box">
+                                                        <figure class="popup__images">
+                                                            <img src="images/burgers/burgers-3.jpg" alt="Роял бургер">
+                                                        </figure>
+
+                                                        <div class="popup__info">
+                                                            <h2 class="popup__title">
+                                                                Роял бургер
+                                                            </h2>
+                                                            <h4 class="popup__subtitle">
+                                                                Ингредиенты
+                                                            </h4>
+                                                            <p class="popup__info-text">
+                                                                Две котлеты из говядины, бекон, сыр чеддер плавленый,
+                                                                сыр дор блю, салат ромэн, томаты, маринованный огурец,
+                                                                соус BBQ, картофель фри, пикантный соус
+                                                            </p>
+                                                            <div class="menu__price">
+
+                                                                <div>350 руб</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="menu-btn__row">
+                                                        <button class="menu-btn" type="submit">
+                                                            В корзину
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- modal-end -->
                                         <h3 class="menu__title">
-                                            <a href="#burgers-3" class="menu__title-link">
-                                                Роял бургер
-                                            </a>
+
+                                            Роял бургер
+
                                         </h3>
                                         <div class="menu__subtitle">
                                             <span class="menu-span__weight">
@@ -464,7 +684,8 @@
                                             </span>
                                         </div>
                                         <div class="menu__description">
-                                            Две котлеты из говядины, бекон, сыр чеддер плавленый, сыр дор блю, салат ромэн, томаты, маринованный огурец, соус BBQ, картофель фри, пикантный соус
+                                            Две котлеты из говядины, бекон, сыр чеддер плавленый, сыр дор блю, салат
+                                            ромэн, томаты, маринованный огурец, соус BBQ, картофель фри, пикантный соус
                                         </div>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
@@ -477,19 +698,60 @@
                                         </div>
                                     </div>
                                 </div>
-    
-    
+
+
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#burgers-4" class="menu__images-link">
+                                        <a href="#burgers-4" class="menu__images-link popup-link">
                                             <figure class="menu__images">
                                                 <img src="images/burgers/burgers-4.jpg" alt="Чикен бургер">
                                             </figure>
                                         </a>
+                                        <!-- modal-start -->
+                                        <div id="burgers-4" class="popup" role="alert">
+                                            <div class="popup__body">
+                                                <div class="popup__content">
+                                                    <button type="button" class="popup__close close-popup"
+                                                        aria-label="закрыть модальное окно"></button>
+
+                                                    <div class="popup__item-box">
+                                                        <figure class="popup__images">
+                                                            <img src="images/burgers/burgers-4.jpg" alt="Чикен бургер">
+                                                        </figure>
+
+                                                        <div class="popup__info">
+                                                            <h2 class="popup__title">
+                                                                Чикен бургер
+                                                            </h2>
+                                                            <h4 class="popup__subtitle">
+                                                                Ингредиенты
+                                                            </h4>
+                                                            <p class="popup__info-text">
+                                                                Котлета куриная, бекон, сыр чеддер плавленый, салат
+                                                                ромэн, томаты, соус тартар, картофель фри, пикантный
+                                                                соус
+                                                            </p>
+                                                            <div class="menu__price">
+
+                                                                <div>400 руб</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="menu-btn__row">
+                                                        <button class="menu-btn" type="submit">
+                                                            В корзину
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- modal-end -->
                                         <h3 class="menu__title">
-                                            <a href="#burgers-4" class="menu__title-link">
-                                                Чикен бургер
-                                            </a>
+
+                                            Чикен бургер
+
                                         </h3>
                                         <div class="menu__subtitle">
                                             <span class="menu-span__weight">
@@ -497,7 +759,8 @@
                                             </span>
                                         </div>
                                         <div class="menu__description">
-                                            Котлета куриная, бекон, сыр чеддер плавленый, салат ромэн, томаты, соус тартар, картофель фри, пикантный соус
+                                            Котлета куриная, бекон, сыр чеддер плавленый, салат ромэн, томаты, соус
+                                            тартар, картофель фри, пикантный соус
                                         </div>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
@@ -510,19 +773,58 @@
                                         </div>
                                     </div>
                                 </div>
-    
-    
+
+
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#burgers-5" class="menu__images-link">
+                                        <a href="#burgers-5" class="menu__images-link popup-link">
                                             <figure class="menu__images">
                                                 <img src="images/burgers/burgers-5.jpg" alt="Сухарики">
                                             </figure>
                                         </a>
+                                        <!-- modal-start -->
+                                        <div id="burgers-5" class="popup" role="alert">
+                                            <div class="popup__body">
+                                                <div class="popup__content">
+                                                    <button type="button" class="popup__close close-popup"
+                                                        aria-label="закрыть модальное окно"></button>
+
+                                                    <div class="popup__item-box">
+                                                        <figure class="popup__images">
+                                                            <img src="images/burgers/burgers-5.jpg" alt="Сухарики">
+                                                        </figure>
+
+                                                        <div class="popup__info">
+                                                            <h2 class="popup__title">
+                                                                Сухарики к пиву
+                                                            </h2>
+                                                            <h4 class="popup__subtitle">
+                                                                Ингредиенты
+                                                            </h4>
+                                                            <p class="popup__info-text">
+                                                                Сухарики к пиву
+                                                            </p>
+                                                            <div class="menu__price">
+
+                                                                <div>50 руб</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="menu-btn__row">
+                                                        <button class="menu-btn" type="submit">
+                                                            В корзину
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- modal-end -->
                                         <h3 class="menu__title">
-                                            <a href="#burgers-5" class="menu__title-link">
-                                                Сухарики к пиву
-                                            </a>
+
+                                            Сухарики к пиву
+
                                         </h3>
                                         <div class="menu__subtitle">
                                             <span class="menu-span__weight">
@@ -543,22 +845,66 @@
                                         </div>
                                     </div>
                                 </div>
-    
-    
+
+
                                 <div class="menu__column">
                                     <div class="menu__service">
                                         <span class="menu-service__span">Акция</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#burgers-6" class="menu__images-link">
+                                        <a href="#burgers-6" class="menu__images-link popup-link">
                                             <figure class="menu__images">
                                                 <img src="images/burgers/burgers-6.jpg" alt="Блюдо Фестиваль сыра">
                                             </figure>
                                         </a>
+                                        <!-- modal-start -->
+                                        <div id="burgers-6" class="popup" role="alert">
+                                            <div class="popup__body">
+                                                <div class="popup__content">
+                                                    <button type="button" class="popup__close close-popup"
+                                                        aria-label="закрыть модальное окно"></button>
+
+                                                    <div class="popup__item-box">
+                                                        <figure class="popup__images">
+                                                            <img src="images/burgers/burgers-6.jpg"
+                                                                alt="Блюдо Фестиваль сыра">
+                                                        </figure>
+
+                                                        <div class="popup__info">
+                                                            <h2 class="popup__title">
+                                                                Фестиваль сыра
+                                                            </h2>
+                                                            <h4 class="popup__subtitle">
+                                                                Ингредиенты
+                                                            </h4>
+                                                            <p class="popup__info-text">
+                                                                Сыры: бри, мимолет, пармезан, козий, конфитюр из
+                                                                сладкого лука, грецкие орехи, мед
+                                                            </p>
+                                                            <div class="menu__price">
+                                                                <div class="menu__price">
+                                                                    <div class="menu__price-stock">
+                                                                        210 руб
+                                                                    </div>
+                                                                    <div>250 руб</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="menu-btn__row">
+                                                        <button class="menu-btn" type="submit">
+                                                            В корзину
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- modal-end -->
                                         <h3 class="menu__title">
-                                            <a href="#burgers-6" class="menu__title-link">
-                                                Фестиваль сыра
-                                            </a>
+
+                                            Фестиваль сыра
+
                                         </h3>
                                         <div class="menu__subtitle">
                                             <span class="menu-span__weight">
@@ -566,14 +912,15 @@
                                             </span>
                                         </div>
                                         <div class="menu__description">
-                                            Сыры: бри, мимолет, пармезан, козий, конфитюр из сладкого лука, грецкие орехи, мед
+                                            Сыры: бри, мимолет, пармезан, козий, конфитюр из сладкого лука, грецкие
+                                            орехи, мед
                                         </div>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
                                             <div class="menu__price">
                                                 <div class="menu__price">
                                                     <div class="menu__price-stock">
-                                                         210 руб
+                                                        210 руб
                                                     </div>
                                                     <div>250 руб</div>
                                                 </div>
@@ -584,19 +931,59 @@
                                         </div>
                                     </div>
                                 </div>
-    
-    
+
+
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#burgers-7" class="menu__images-link">
+                                        <a href="#burgers-7" class="menu__images-link popup-link">
                                             <figure class="menu__images">
                                                 <img src="images/burgers/burgers-7.jpg" alt="Блюдо Мясная палитра">
                                             </figure>
                                         </a>
+                                        <!-- modal-start -->
+                                        <div id="burgers-7" class="popup" role="alert">
+                                            <div class="popup__body">
+                                                <div class="popup__content">
+                                                    <button type="button" class="popup__close close-popup"
+                                                        aria-label="закрыть модальное окно"></button>
+
+                                                    <div class="popup__item-box">
+                                                        <figure class="popup__images">
+                                                            <img src="images/burgers/burgers-7.jpg"
+                                                                alt="Блюдо Мясная палитра">
+                                                        </figure>
+
+                                                        <div class="popup__info">
+                                                            <h2 class="popup__title">
+                                                                Мясная палитра
+                                                            </h2>
+                                                            <h4 class="popup__subtitle">
+                                                                Ингредиенты
+                                                            </h4>
+                                                            <p class="popup__info-text">
+                                                                Хамон, салями милано, салями наполи, чоризо, паве
+                                                            </p>
+                                                            <div class="menu__price">
+
+                                                                <div>310 руб</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="menu-btn__row">
+                                                        <button class="menu-btn" type="submit">
+                                                            В корзину
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- modal-end -->
                                         <h3 class="menu__title">
-                                            <a href="#burgers-7" class="menu__title-link">
-                                                Мясная палитра
-                                            </a>
+
+                                            Мясная палитра
+
                                         </h3>
                                         <div class="menu__subtitle">
                                             <span class="menu-span__weight">
@@ -617,8 +1004,8 @@
                                         </div>
                                     </div>
                                 </div>
-    
-    
+
+
                                 <div class="menu__column">
                                     <div class="menu__service">
                                         <span class="menu-service__span">1 + 1</span>
@@ -627,15 +1014,56 @@
                                         <span class="menu-service__span menu-service__span-hit">Хит</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#burgers-8" class="menu__images-link">
+                                        <a href="#burgers-8" class="menu__images-link popup-link">
                                             <figure class="menu__images">
-                                                <img src="images/burgers/burgers-8.jpg" alt="Сырные палочки с соусом из клюквы">
+                                                <img src="images/burgers/burgers-8.jpg"
+                                                    alt="Сырные палочки с соусом из клюквы">
                                             </figure>
                                         </a>
+                                        <!-- modal-start -->
+                                        <div id="burgers-8" class="popup" role="alert">
+                                            <div class="popup__body">
+                                                <div class="popup__content">
+                                                    <button type="button" class="popup__close close-popup"
+                                                        aria-label="закрыть модальное окно"></button>
+
+                                                    <div class="popup__item-box">
+                                                        <figure class="popup__images">
+                                                            <img src="images/burgers/burgers-8.jpg"
+                                                                alt="Сырные палочки с соусом из клюквы">
+                                                        </figure>
+
+                                                        <div class="popup__info">
+                                                            <h2 class="popup__title">
+                                                                Сырные палочки с соусом из клюквы, забери сам
+                                                            </h2>
+                                                            <h4 class="popup__subtitle">
+                                                                Ингредиенты
+                                                            </h4>
+                                                            <p class="popup__info-text">
+                                                                Сыр чеддер в панировке из сухарей панко
+                                                            </p>
+                                                            <div class="menu__price">
+
+                                                                <div>450 руб</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="menu-btn__row">
+                                                        <button class="menu-btn" type="submit">
+                                                            В корзину
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- modal-end -->
                                         <h3 class="menu__title">
-                                            <a href="#burgers-8" class="menu__title-link">
-                                                Сырные палочки с соусом из клюквы, забери сам
-                                            </a>
+
+                                            Сырные палочки с соусом из клюквы, забери сам
+
                                         </h3>
                                         <div class="menu__subtitle">
                                             <span class="menu-span__weight">
@@ -643,7 +1071,8 @@
                                             </span>
                                         </div>
                                         <div class="menu__description">
-                                            Сыры: бри, мимолет, пармезан, козий, конфитюр из сладкого лука, грецкие орехи, мед
+                                            Сыры: бри, мимолет, пармезан, козий, конфитюр из сладкого лука, грецкие
+                                            орехи, мед
                                         </div>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
@@ -656,19 +1085,60 @@
                                         </div>
                                     </div>
                                 </div>
-    
-    
+
+
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#burgers-9" class="menu__images-link">
+                                        <a href="#burgers-9" class="menu__images-link popup-link">
                                             <figure class="menu__images">
-                                                <img src="images/burgers/burgers-9.jpg" alt="Сырные палочки с соусом из клюквы">
+                                                <img src="images/burgers/burgers-9.jpg"
+                                                    alt="Сырные палочки с соусом из клюквы">
                                             </figure>
                                         </a>
+                                        <!-- modal-start -->
+                                        <div id="burgers-9" class="popup" role="alert">
+                                            <div class="popup__body">
+                                                <div class="popup__content">
+                                                    <button type="button" class="popup__close close-popup"
+                                                        aria-label="закрыть модальное окно"></button>
+
+                                                    <div class="popup__item-box">
+                                                        <figure class="popup__images">
+                                                            <img src="images/burgers/burgers-9.jpg"
+                                                                alt="Сырные палочки с соусом из клюквы">
+                                                        </figure>
+
+                                                        <div class="popup__info">
+                                                            <h2 class="popup__title">
+                                                                Сырные палочки с соусом из клюквы
+                                                            </h2>
+                                                            <h4 class="popup__subtitle">
+                                                                Ингредиенты
+                                                            </h4>
+                                                            <p class="popup__info-text">
+                                                                Сыр чеддер в панировке из сухарей панко
+                                                            </p>
+                                                            <div class="menu__price">
+
+                                                                <div>360 руб</div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="menu-btn__row">
+                                                        <button class="menu-btn" type="submit">
+                                                            В корзину
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- modal-end -->
                                         <h3 class="menu__title">
-                                            <a href="#burgers-9" class="menu__title-link">
-                                                Сырные палочки с соусом из клюквы
-                                            </a>
+
+                                            Сырные палочки с соусом из клюквы
+
                                         </h3>
                                         <div class="menu__subtitle">
                                             <span class="menu-span__weight">
@@ -689,508 +1159,87 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
-            
+
                         </div>
                     </section>
                 </div>
             </section>
         </main>
-    
+
         <footer class="footer">
-           
+
             <div class="footer__body">
-    
-                <div class="footer__images-logo">
-                    <a href="index.html" class="footer__logo-link">
-                        <img src="images/logo.svg" alt="Логотип компании MAFIA">
-                    </a>
-                </div>
-    
-                <div class="footer__info">
-    
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="nav__link-inner">
-                                Меню доставки
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="nav__link-inner">
-                                Для детей
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="nav__link-inner">
-                                Информация
-                            </a>
-                        </li>
-                    </ul>
-    
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="nav__link-inner">
-                                Компания
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="nav__link-inner">
-                                Контакты
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="nav__link-inner">
-                                Вакансии
-                            </a>
-                        </li>
-                    </ul>
-    
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="nav__link-inner">
-                                Заберу сам
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="nav__link-inner">
-                                Услуга 1 + 1
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="nav__link-inner">
-                                Акции
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-    
+
+                <a class="footer__images-logo">
+
+                    <img src="images/logo.svg" alt="Логотип компании MAFIA">
+
+                </a>
+
+
                 <div class="footer__social">
-                    <ul class="footer__social-list">
-                        
-                            <li class="footer__social-item">
-                                <a href="https://www.instagram.com/" class="footer__social-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                                        <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M0 17C0 26.3874 7.6126 34 17 34C26.3874 34 34 26.3874 34 17C34 7.6126 26.3874 0 17 0C7.6126 0 0 7.6126 0 17ZM21.6888 7.55487C20.4648 7.49707 20.0976 7.48687 17.0002 7.48687C13.9028 7.48687 13.5356 7.49707 12.3116 7.55487C11.1794 7.60927 10.564 7.79627 10.156 7.95607C9.61538 8.16687 9.22778 8.41847 8.82318 8.82307C8.41858 9.22767 8.16698 9.61528 7.95618 10.1559C7.79638 10.5639 7.60598 11.1793 7.55498 12.3115C7.49718 13.5355 7.48698 13.9027 7.48698 17.0001C7.48698 20.0975 7.50058 20.4647 7.55498 21.6887C7.60938 22.8209 7.79638 23.4363 7.95618 23.8443C8.16698 24.3849 8.41858 24.7725 8.82318 25.1771C9.22778 25.5817 9.61538 25.8333 10.156 26.0441C10.564 26.2039 11.1794 26.3943 12.3116 26.4453C13.5356 26.5031 13.9028 26.5133 17.0002 26.5133C20.0976 26.5133 20.4648 26.4997 21.6888 26.4453C22.821 26.3909 23.4364 26.2039 23.8444 26.0441C24.385 25.8333 24.7726 25.5817 25.1772 25.1771C25.5818 24.7725 25.8334 24.3849 26.0442 23.8443C26.204 23.4363 26.3944 22.8209 26.4454 21.6887C26.5032 20.4647 26.5134 20.0975 26.5134 17.0001C26.5134 13.9027 26.4998 13.5355 26.4454 12.3115C26.391 11.1793 26.204 10.5639 26.0442 10.1559C25.8334 9.61528 25.5818 9.22767 25.1772 8.82307C24.7726 8.41847 24.385 8.16687 23.8444 7.95607C23.4364 7.79627 22.821 7.60587 21.6888 7.55487ZM12.2164 5.46727C13.454 5.40947 13.8484 5.39587 17.0002 5.39587C20.152 5.39587 20.5464 5.40947 21.7806 5.46387C23.0182 5.52167 23.8614 5.71887 24.5992 6.00447C25.3642 6.30367 26.0102 6.69807 26.6562 7.34407C27.3022 7.98667 27.7 8.63607 27.9958 9.39427C28.2848 10.1355 28.4786 10.9787 28.5364 12.2129C28.5942 13.4505 28.6078 13.8449 28.6078 16.9967C28.6078 20.1485 28.5942 20.5429 28.5364 21.7805C28.4786 23.0181 28.2814 23.8613 27.9958 24.5991C27.6966 25.3641 27.3022 26.0101 26.6562 26.6561C26.0136 27.3021 25.3642 27.6999 24.606 27.9957C23.8648 28.2847 23.0216 28.4785 21.7874 28.5363C20.5498 28.5941 20.1554 28.6077 17.0036 28.6077C13.8518 28.6077 13.4574 28.5941 12.2198 28.5363C10.9822 28.4785 10.139 28.2813 9.40118 27.9957C8.63618 27.6965 7.99018 27.3021 7.34418 26.6561C6.69818 26.0135 6.30038 25.3641 6.00458 24.6059C5.71558 23.8647 5.52178 23.0215 5.46398 21.7873C5.40618 20.5497 5.39258 20.1553 5.39258 17.0035C5.39258 13.8517 5.40618 13.4573 5.46398 12.2197C5.52178 10.9821 5.71898 10.1389 6.00458 9.40107C6.30378 8.63608 6.69818 7.99007 7.34418 7.34407C7.98678 6.69807 8.63618 6.30027 9.39778 6.00787C10.139 5.71887 10.9822 5.52507 12.2164 5.46727ZM17.0005 11.0399C13.7093 11.0399 11.0403 13.7089 11.0403 17.0001C11.0403 20.2913 13.7093 22.9603 17.0005 22.9603C20.2917 22.9603 22.9607 20.2913 22.9607 17.0001C22.9607 13.7089 20.2917 11.0399 17.0005 11.0399ZM17.0005 20.8693C14.8653 20.8693 13.1313 19.1387 13.1313 17.0001C13.1313 14.8615 14.8653 13.1309 17.0005 13.1309C19.1357 13.1309 20.8697 14.8615 20.8697 17.0001C20.8697 19.1387 19.1357 20.8693 17.0005 20.8693ZM24.5894 10.8052C24.5894 11.5751 23.9653 12.1992 23.1954 12.1992C22.4255 12.1992 21.8014 11.5751 21.8014 10.8052C21.8014 10.0353 22.4255 9.41119 23.1954 9.41119C23.9653 9.41119 24.5894 10.0353 24.5894 10.8052Z" fill="#808080"></path>
-                                    </svg> 
-                                </a>
-                            </li>
-                            <li class="footer__social-item">
-                                <a href="https://web.telegram.org/" class="footer__social-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34" fill="none"> <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M33 17C33 26.3888 25.6127 34 16.5 34C7.3873 34 0 26.3888 0 17C0 7.61116 7.3873 0 16.5 0C25.6127 0 33 7.61116 33 17ZM23.4589 10.3118L7.55012 16.6316C6.45974 17.0708 6.47899 17.6927 7.36312 17.9817L11.4359 19.2907L20.8835 13.1622C21.3221 12.8618 21.7291 13.0318 21.3964 13.3336L13.7514 20.4495L13.4585 24.7746C13.8847 24.7746 14.0704 24.5833 14.2904 24.3567L16.28 22.3818L20.405 25.5141C21.1571 25.9533 21.6947 25.7266 21.8955 24.7944L24.6042 11.6463L24.6029 11.6478C24.8421 10.4974 24.1972 10.037 23.4589 10.3118Z" fill="#808080"></path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer__social-item">
-                                <a href="https://web.whatsapp.com/" class="footer__social-link">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34" fill="none">
-                                        <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M20.5346 19.9335C20.3644 20.4254 19.5477 20.8738 19.1548 20.9343C18.8031 20.9885 18.3576 21.0108 17.8678 20.8515C17.5708 20.7537 17.1902 20.6241 16.7035 20.4073C14.6534 19.4957 13.3138 17.3697 13.2117 17.2294C13.1096 17.0892 12.3774 16.0883 12.3774 15.0523C12.3774 14.0164 12.9054 13.5064 13.0931 13.296C13.2798 13.0857 13.5015 13.0325 13.6376 13.0325C13.7737 13.0325 13.9098 13.0336 14.0295 13.04C14.1553 13.0464 14.3234 12.9911 14.4894 13.4012C14.6596 13.823 15.0679 14.859 15.1195 14.9642C15.17 15.0693 15.2041 15.1926 15.136 15.3328C15.0679 15.4731 15.0339 15.5613 14.9318 15.6845C14.8297 15.8067 14.7173 15.9587 14.6255 16.0532C14.5234 16.1573 14.4162 16.2721 14.5358 16.4825C14.6554 16.6928 15.0648 17.3824 15.6722 17.9402C16.4529 18.6574 17.1119 18.8795 17.3161 18.9857C17.5202 19.0909 17.6399 19.0728 17.7585 18.9326C17.8781 18.7923 18.27 18.3185 18.4061 18.107C18.5422 17.8967 18.6783 17.9317 18.866 18.0018C19.0527 18.072 20.0581 18.5809 20.2623 18.6872C20.4665 18.7923 20.6026 18.8444 20.6542 18.9326C20.7047 19.0208 20.7047 19.4415 20.5346 19.9335ZM16.5364 9.92261C12.7868 9.92261 9.73638 13.0634 9.73535 16.9234C9.73535 18.2462 10.0942 19.535 10.7749 20.6496L10.9368 20.9142L10.2499 23.4981L12.8229 22.8033L13.0704 22.9542C14.114 23.5927 15.3103 23.9306 16.5302 23.9306H16.5333C20.2799 23.9306 23.3293 20.7898 23.3313 16.9287C23.3313 15.0577 22.626 13.2992 21.3421 11.9754C20.0581 10.6525 18.3514 9.92261 16.5364 9.92261Z" fill="#808080">
-                                       </path>
-                                       <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd" d="M16.534 25.3534H16.5309C15.1614 25.3534 13.8167 24.9996 12.6225 24.3281L8.28609 25.5L9.44728 21.1342C8.73159 19.8571 8.35416 18.4078 8.35519 16.9224C8.35725 12.2783 12.0254 8.5 16.534 8.5C18.7213 8.5 20.7756 9.37762 22.3193 10.9703C23.8631 12.5619 24.7139 14.6784 24.7129 16.9299C24.7108 21.5741 21.0416 25.3534 16.534 25.3534ZM16.5 0C7.38684 0 0 7.61069 0 17C0 26.3883 7.38684 34 16.5 34C25.6121 34 33 26.3883 33 17C33 7.61069 25.6121 0 16.5 0Z" fill="#808080">
-                                       </path>
-                                    </svg> 
-                                </a>
-                            </li>
-                        
+                    <ul class="footer__social-list" aria-label="Наши социальные сети">
+
+                        <li class="footer__social-item">
+                            <a href="https://www.instagram.com/" aria-label="Перейти на сайт Инстаграм"
+                                class="footer__social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
+                                    fill="none">
+                                    <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 17C0 26.3874 7.6126 34 17 34C26.3874 34 34 26.3874 34 17C34 7.6126 26.3874 0 17 0C7.6126 0 0 7.6126 0 17ZM21.6888 7.55487C20.4648 7.49707 20.0976 7.48687 17.0002 7.48687C13.9028 7.48687 13.5356 7.49707 12.3116 7.55487C11.1794 7.60927 10.564 7.79627 10.156 7.95607C9.61538 8.16687 9.22778 8.41847 8.82318 8.82307C8.41858 9.22767 8.16698 9.61528 7.95618 10.1559C7.79638 10.5639 7.60598 11.1793 7.55498 12.3115C7.49718 13.5355 7.48698 13.9027 7.48698 17.0001C7.48698 20.0975 7.50058 20.4647 7.55498 21.6887C7.60938 22.8209 7.79638 23.4363 7.95618 23.8443C8.16698 24.3849 8.41858 24.7725 8.82318 25.1771C9.22778 25.5817 9.61538 25.8333 10.156 26.0441C10.564 26.2039 11.1794 26.3943 12.3116 26.4453C13.5356 26.5031 13.9028 26.5133 17.0002 26.5133C20.0976 26.5133 20.4648 26.4997 21.6888 26.4453C22.821 26.3909 23.4364 26.2039 23.8444 26.0441C24.385 25.8333 24.7726 25.5817 25.1772 25.1771C25.5818 24.7725 25.8334 24.3849 26.0442 23.8443C26.204 23.4363 26.3944 22.8209 26.4454 21.6887C26.5032 20.4647 26.5134 20.0975 26.5134 17.0001C26.5134 13.9027 26.4998 13.5355 26.4454 12.3115C26.391 11.1793 26.204 10.5639 26.0442 10.1559C25.8334 9.61528 25.5818 9.22767 25.1772 8.82307C24.7726 8.41847 24.385 8.16687 23.8444 7.95607C23.4364 7.79627 22.821 7.60587 21.6888 7.55487ZM12.2164 5.46727C13.454 5.40947 13.8484 5.39587 17.0002 5.39587C20.152 5.39587 20.5464 5.40947 21.7806 5.46387C23.0182 5.52167 23.8614 5.71887 24.5992 6.00447C25.3642 6.30367 26.0102 6.69807 26.6562 7.34407C27.3022 7.98667 27.7 8.63607 27.9958 9.39427C28.2848 10.1355 28.4786 10.9787 28.5364 12.2129C28.5942 13.4505 28.6078 13.8449 28.6078 16.9967C28.6078 20.1485 28.5942 20.5429 28.5364 21.7805C28.4786 23.0181 28.2814 23.8613 27.9958 24.5991C27.6966 25.3641 27.3022 26.0101 26.6562 26.6561C26.0136 27.3021 25.3642 27.6999 24.606 27.9957C23.8648 28.2847 23.0216 28.4785 21.7874 28.5363C20.5498 28.5941 20.1554 28.6077 17.0036 28.6077C13.8518 28.6077 13.4574 28.5941 12.2198 28.5363C10.9822 28.4785 10.139 28.2813 9.40118 27.9957C8.63618 27.6965 7.99018 27.3021 7.34418 26.6561C6.69818 26.0135 6.30038 25.3641 6.00458 24.6059C5.71558 23.8647 5.52178 23.0215 5.46398 21.7873C5.40618 20.5497 5.39258 20.1553 5.39258 17.0035C5.39258 13.8517 5.40618 13.4573 5.46398 12.2197C5.52178 10.9821 5.71898 10.1389 6.00458 9.40107C6.30378 8.63608 6.69818 7.99007 7.34418 7.34407C7.98678 6.69807 8.63618 6.30027 9.39778 6.00787C10.139 5.71887 10.9822 5.52507 12.2164 5.46727ZM17.0005 11.0399C13.7093 11.0399 11.0403 13.7089 11.0403 17.0001C11.0403 20.2913 13.7093 22.9603 17.0005 22.9603C20.2917 22.9603 22.9607 20.2913 22.9607 17.0001C22.9607 13.7089 20.2917 11.0399 17.0005 11.0399ZM17.0005 20.8693C14.8653 20.8693 13.1313 19.1387 13.1313 17.0001C13.1313 14.8615 14.8653 13.1309 17.0005 13.1309C19.1357 13.1309 20.8697 14.8615 20.8697 17.0001C20.8697 19.1387 19.1357 20.8693 17.0005 20.8693ZM24.5894 10.8052C24.5894 11.5751 23.9653 12.1992 23.1954 12.1992C22.4255 12.1992 21.8014 11.5751 21.8014 10.8052C21.8014 10.0353 22.4255 9.41119 23.1954 9.41119C23.9653 9.41119 24.5894 10.0353 24.5894 10.8052Z"
+                                        fill="#808080"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://web.telegram.org/" aria-label="Перейти на сайт Телеграм"
+                                class="footer__social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34"
+                                    fill="none">
+                                    <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M33 17C33 26.3888 25.6127 34 16.5 34C7.3873 34 0 26.3888 0 17C0 7.61116 7.3873 0 16.5 0C25.6127 0 33 7.61116 33 17ZM23.4589 10.3118L7.55012 16.6316C6.45974 17.0708 6.47899 17.6927 7.36312 17.9817L11.4359 19.2907L20.8835 13.1622C21.3221 12.8618 21.7291 13.0318 21.3964 13.3336L13.7514 20.4495L13.4585 24.7746C13.8847 24.7746 14.0704 24.5833 14.2904 24.3567L16.28 22.3818L20.405 25.5141C21.1571 25.9533 21.6947 25.7266 21.8955 24.7944L24.6042 11.6463L24.6029 11.6478C24.8421 10.4974 24.1972 10.037 23.4589 10.3118Z"
+                                        fill="#808080"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://web.whatsapp.com/" aria-label="Перейти на сайт Ватсап"
+                                class="footer__social-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34"
+                                    fill="none">
+                                    <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.5346 19.9335C20.3644 20.4254 19.5477 20.8738 19.1548 20.9343C18.8031 20.9885 18.3576 21.0108 17.8678 20.8515C17.5708 20.7537 17.1902 20.6241 16.7035 20.4073C14.6534 19.4957 13.3138 17.3697 13.2117 17.2294C13.1096 17.0892 12.3774 16.0883 12.3774 15.0523C12.3774 14.0164 12.9054 13.5064 13.0931 13.296C13.2798 13.0857 13.5015 13.0325 13.6376 13.0325C13.7737 13.0325 13.9098 13.0336 14.0295 13.04C14.1553 13.0464 14.3234 12.9911 14.4894 13.4012C14.6596 13.823 15.0679 14.859 15.1195 14.9642C15.17 15.0693 15.2041 15.1926 15.136 15.3328C15.0679 15.4731 15.0339 15.5613 14.9318 15.6845C14.8297 15.8067 14.7173 15.9587 14.6255 16.0532C14.5234 16.1573 14.4162 16.2721 14.5358 16.4825C14.6554 16.6928 15.0648 17.3824 15.6722 17.9402C16.4529 18.6574 17.1119 18.8795 17.3161 18.9857C17.5202 19.0909 17.6399 19.0728 17.7585 18.9326C17.8781 18.7923 18.27 18.3185 18.4061 18.107C18.5422 17.8967 18.6783 17.9317 18.866 18.0018C19.0527 18.072 20.0581 18.5809 20.2623 18.6872C20.4665 18.7923 20.6026 18.8444 20.6542 18.9326C20.7047 19.0208 20.7047 19.4415 20.5346 19.9335ZM16.5364 9.92261C12.7868 9.92261 9.73638 13.0634 9.73535 16.9234C9.73535 18.2462 10.0942 19.535 10.7749 20.6496L10.9368 20.9142L10.2499 23.4981L12.8229 22.8033L13.0704 22.9542C14.114 23.5927 15.3103 23.9306 16.5302 23.9306H16.5333C20.2799 23.9306 23.3293 20.7898 23.3313 16.9287C23.3313 15.0577 22.626 13.2992 21.3421 11.9754C20.0581 10.6525 18.3514 9.92261 16.5364 9.92261Z"
+                                        fill="#808080">
+                                    </path>
+                                    <path class="svg-path" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.534 25.3534H16.5309C15.1614 25.3534 13.8167 24.9996 12.6225 24.3281L8.28609 25.5L9.44728 21.1342C8.73159 19.8571 8.35416 18.4078 8.35519 16.9224C8.35725 12.2783 12.0254 8.5 16.534 8.5C18.7213 8.5 20.7756 9.37762 22.3193 10.9703C23.8631 12.5619 24.7139 14.6784 24.7129 16.9299C24.7108 21.5741 21.0416 25.3534 16.534 25.3534ZM16.5 0C7.38684 0 0 7.61069 0 17C0 26.3883 7.38684 34 16.5 34C25.6121 34 33 26.3883 33 17C33 7.61069 25.6121 0 16.5 0Z"
+                                        fill="#808080">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
-    
+
             </div>
+
             <div class="rights-reserved">
                 <div class="rights-reserved__info">
-                    <a href="#" class="rights-reserved__link">
+                    <a class="rights-reserved__link">
                         © 2002 - 2021 MAFIA
                     </a>
-                    <a href="#" class="rights-reserved__link">
+                    <a href="policy.html" class="rights-reserved__link">
                         Все права защищены.
                     </a>
                 </div>
             </div>
-        
+
         </footer>
 
     </div>
-
-    
-      <!-- всплывающие карточки товаров начало -->
-
-      <section id="burgers-1" class="popup">
-        <a href="#header" class="popup__area"></a>
-        <div class="popup__body">
-            <div class="popup__content">
-                <a class="popup__close" href="#header"></a>
-
-                            <div class="popup__item-box">
-                                <figure class="popup__images">
-                                    <img src="images/burgers/burgers-1.jpg" alt="Фирменный бургер Мафия">
-                                </figure>
-                        
-                                <div class="popup__info">
-                                    <h2 class="popup__title">
-                                        Фирменный бургер "Мафия"
-                                    </h2>
-                                    <h4 class="popup__subtitle">
-                                        Ингредиенты
-                                    </h4>
-                                    <p class="popup__info-text">
-                                        Котлета из говядины, сыр чеддер плавленый, салат ромэн, томаты, маринованный огурец, вешенки-гриль, соус BBQ, картофель фри, соус тартар
-                                    </p>
-                                    <div class="menu__price">
-                                        <div class="menu__price">
-                                            <div class="menu__price-stock">
-                                                 190 руб
-                                            </div>
-                                            <div>320 руб</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-btn__row">
-                                <button class="menu-btn" type="submit">
-                                    В корзину
-                                </button>
-                            </div>
-                    </div>
-                </div>
-
-            
-        
-    </section>
-
-
-    <section id="burgers-2" class="popup">
-        <a href="#header" class="popup__area"></a>
-        <div class="popup__body">
-            <div class="popup__content">
-                <a class="popup__close" href="#header"></a>
-
-                            <div class="popup__item-box">
-                                <figure class="popup__images">
-                                    <img src="images/burgers/burgers-2.jpg" alt="Нью Йорк бургер">
-                                </figure>
-                        
-                                <div class="popup__info">
-                                    <h2 class="popup__title">
-                                        Нью Йорк бургер
-                                    </h2>
-                                    <h4 class="popup__subtitle">
-                                        Ингредиенты
-                                    </h4>
-                                    <p class="popup__info-text">
-                                        Котлета из говядины, бекон, сыр чеддер плавленый, салат ромэн, томаты, соус тартар, картофель фри, пикантный соус
-                                    </p>
-                                    <div class="menu__price">
-                                        
-                                            <div>330 руб</div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-btn__row">
-                                <button class="menu-btn" type="submit">
-                                    В корзину
-                                </button>
-                            </div>
-                    </div>
-                </div>
-
-            
-        
-    </section>
-
-
-    <section id="burgers-3" class="popup">
-        <a href="#header" class="popup__area"></a>
-        <div class="popup__body">
-            <div class="popup__content">
-                <a class="popup__close" href="#header"></a>
-
-                            <div class="popup__item-box">
-                                <figure class="popup__images">
-                                    <img src="images/burgers/burgers-3.jpg" alt="Роял бургер">
-                                </figure>
-                        
-                                <div class="popup__info">
-                                    <h2 class="popup__title">
-                                        Роял бургер
-                                    </h2>
-                                    <h4 class="popup__subtitle">
-                                        Ингредиенты
-                                    </h4>
-                                    <p class="popup__info-text">
-                                        Две котлеты из говядины, бекон, сыр чеддер плавленый, сыр дор блю, салат ромэн, томаты, маринованный огурец, соус BBQ, картофель фри, пикантный соус
-                                    </p>
-                                    <div class="menu__price">
-                                        
-                                            <div>350 руб</div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-btn__row">
-                                <button class="menu-btn" type="submit">
-                                    В корзину
-                                </button>
-                            </div>
-                    </div>
-                </div>
-
-           
-        
-    </section>
-
-
-    <section id="burgers-4" class="popup">
-        <a href="#header" class="popup__area"></a>
-        <div class="popup__body">
-            <div class="popup__content">
-                <a class="popup__close" href="#header"></a>
-
-                            <div class="popup__item-box">
-                                <figure class="popup__images">
-                                    <img src="images/burgers/burgers-4.jpg" alt="Чикен бургер">
-                                </figure>
-                        
-                                <div class="popup__info">
-                                    <h2 class="popup__title">
-                                        Чикен бургер
-                                    </h2>
-                                    <h4 class="popup__subtitle">
-                                        Ингредиенты
-                                    </h4>
-                                    <p class="popup__info-text">
-                                        Котлета куриная, бекон, сыр чеддер плавленый, салат ромэн, томаты, соус тартар, картофель фри, пикантный соус
-                                    </p>
-                                    <div class="menu__price">
-                                        
-                                            <div>400 руб</div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-btn__row">
-                                <button class="menu-btn" type="submit">
-                                    В корзину
-                                </button>
-                            </div>
-                    </div>
-                </div>
-
-           
-    </section>
-
-
-    <section id="burgers-5" class="popup">
-        <a href="#header" class="popup__area"></a>
-        <div class="popup__body">
-            <div class="popup__content">
-                <a class="popup__close" href="#header"></a>
-
-                            <div class="popup__item-box">
-                                <figure class="popup__images">
-                                    <img src="images/burgers/burgers-5.jpg" alt="Сухарики">
-                                </figure>
-                        
-                                <div class="popup__info">
-                                    <h2 class="popup__title">
-                                        Сухарики к пиву
-                                    </h2>
-                                    <h4 class="popup__subtitle">
-                                        Ингредиенты
-                                    </h4>
-                                    <p class="popup__info-text">
-                                        Сухарики к пиву
-                                    </p>
-                                    <div class="menu__price">
-                                        
-                                            <div>50 руб</div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-btn__row">
-                                <button class="menu-btn" type="submit">
-                                    В корзину
-                                </button>
-                            </div>
-                    </div>
-                </div>
-
-           
-    </section>
-
-    
-    <section id="burgers-6" class="popup">
-        <a href="#header" class="popup__area"></a>
-        <div class="popup__body">
-            <div class="popup__content">
-                <a class="popup__close" href="#header"></a>
-
-                            <div class="popup__item-box">
-                                <figure class="popup__images">
-                                    <img src="images/burgers/burgers-6.jpg" alt="Блюдо Фестиваль сыра">
-                                </figure>
-                        
-                                <div class="popup__info">
-                                    <h2 class="popup__title">
-                                        Фестиваль сыра
-                                    </h2>
-                                    <h4 class="popup__subtitle">
-                                        Ингредиенты
-                                    </h4>
-                                    <p class="popup__info-text">
-                                        Сыры: бри, мимолет, пармезан, козий, конфитюр из сладкого лука, грецкие орехи, мед
-                                    </p>
-                                    <div class="menu__price">
-                                        <div class="menu__price">
-                                            <div class="menu__price-stock">
-                                                 210 руб
-                                            </div>
-                                            <div>250 руб</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-btn__row">
-                                <button class="menu-btn" type="submit">
-                                    В корзину
-                                </button>
-                            </div>
-                    </div>
-                </div>
-
-            
-    </section>
-
-
-    <section id="burgers-7" class="popup">
-        <a href="#header" class="popup__area"></a>
-        <div class="popup__body">
-            <div class="popup__content">
-                <a class="popup__close" href="#header"></a>
-
-                            <div class="popup__item-box">
-                                <figure class="popup__images">
-                                    <img src="images/burgers/burgers-7.jpg" alt="Блюдо Мясная палитра">
-                                </figure>
-                        
-                                <div class="popup__info">
-                                    <h2 class="popup__title">
-                                        Мясная палитра
-                                    </h2>
-                                    <h4 class="popup__subtitle">
-                                        Ингредиенты
-                                    </h4>
-                                    <p class="popup__info-text">
-                                        Хамон, салями милано, салями наполи, чоризо, паве
-                                    </p>
-                                    <div class="menu__price">
-                                       
-                                            <div>310 руб</div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-btn__row">
-                                <button class="menu-btn" type="submit">
-                                    В корзину
-                                </button>
-                            </div>
-                    </div>
-                </div>
-
-            
-    </section>
-
-
-    <section id="burgers-8" class="popup">
-        <a href="#header" class="popup__area"></a>
-        <div class="popup__body">
-            <div class="popup__content">
-                <a class="popup__close" href="#header"></a>
-
-                            <div class="popup__item-box">
-                                <figure class="popup__images">
-                                    <img src="images/burgers/burgers-8.jpg" alt="Сырные палочки с соусом из клюквы">
-                                </figure>
-                        
-                                <div class="popup__info">
-                                    <h2 class="popup__title">
-                                        Сырные палочки с соусом из клюквы, забери сам
-                                    </h2>
-                                    <h4 class="popup__subtitle">
-                                        Ингредиенты
-                                    </h4>
-                                    <p class="popup__info-text">
-                                        Сыр чеддер в панировке из сухарей панко
-                                    </p>
-                                    <div class="menu__price">
-                                       
-                                            <div>450 руб</div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-btn__row">
-                                <button class="menu-btn" type="submit">
-                                    В корзину
-                                </button>
-                            </div>
-                    </div>
-                </div>
-
-           
-    </section>
-
-    
-    <section id="burgers-9" class="popup">
-        <a href="#header" class="popup__area"></a>
-        <div class="popup__body">
-            <div class="popup__content">
-                <a class="popup__close" href="#header"></a>
-
-                            <div class="popup__item-box">
-                                <figure class="popup__images">
-                                    <img src="images/burgers/burgers-9.jpg" alt="Сырные палочки с соусом из клюквы">
-                                </figure>
-                        
-                                <div class="popup__info">
-                                    <h2 class="popup__title">
-                                        Сырные палочки с соусом из клюквы
-                                    </h2>
-                                    <h4 class="popup__subtitle">
-                                        Ингредиенты
-                                    </h4>
-                                    <p class="popup__info-text">
-                                        Сыр чеддер в панировке из сухарей панко
-                                    </p>
-                                    <div class="menu__price">
-                                       
-                                            <div>360 руб</div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-btn__row">
-                                <button class="menu-btn" type="submit">
-                                    В корзину
-                                </button>
-                            </div>
-                    </div>
-                </div>
-
-            
-    </section>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
