@@ -133,6 +133,8 @@ button{
 
 
 
+
+
 .header {
     position: fixed;
     width: 100%;
@@ -162,6 +164,7 @@ button{
     align-items: center;
     min-height: 66px;
     padding: 10px 0;
+    padding-right: 70px;
 }
 
 .header__content{
@@ -301,12 +304,12 @@ button{
 }
 
 .nav__list-content::-webkit-scrollbar {
-    width: 5px; /* ширина для вертикального скролла */
-    height: 0px; /* высота для горизонтального скролла */
-    background-color: rgb(22, 22, 22); /* цвет фона */
+    width: 5px;
+    height: 0px;
+    background-color: rgb(22, 22, 22);
     border-radius: 10px;
-    
 }
+
 .nav__list-content::-webkit-scrollbar-thumb {
     background-color: rgba(10, 10, 10, 0.9);
     border-radius: 10px;
@@ -363,10 +366,6 @@ button{
 ._track-order:hover{
     color: #ffffff;
     background-color: #ff0202;
-}
-
-.basket {
-    margin-right: 70px;
 }
 
 .backet__link-svg{
@@ -434,6 +433,14 @@ button{
 
 .nav__link-inner:not([href]):hover {
     color: #ffffff;
+}
+
+.disabled:not([href]) {
+    color: #fd8700;
+}
+
+.disabled:not([href]):hover {
+    color: #fd8700;
 }
 
 .header-column{
@@ -1059,7 +1066,7 @@ button:hover:disabled{
     flex-direction: column;
     align-items: center;
     background-color: #1f1f1f;
-    padding: 50px 0px 20px;
+    padding: 50px 0px 30px;
     padding-left: 75px;
 }
 
@@ -1068,8 +1075,7 @@ button:hover:disabled{
     padding: 0px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 40px;
+    align-items: center;
 }
 
 .footer__info {
@@ -1078,7 +1084,7 @@ button:hover:disabled{
 }
 
 .footer__list {
-    width: 150px;
+    text-align: center;
     margin: 0 10px;
 }
 
@@ -1102,7 +1108,7 @@ button:hover:disabled{
 }
 
 .footer__social-item {
-    margin: 0 10px 5px;
+    margin: 0 10px 0px;
 }
 
 .footer__social-link:hover .svg-path {
@@ -1111,7 +1117,9 @@ button:hover:disabled{
 
 
 .rights-reserved {
-    display: flex;justify-content: center;align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rights-reserved__link {
@@ -1366,9 +1374,6 @@ button:hover:disabled{
 /* стили для popup начало */
 
 /* // Попап начало */
-body.lock {
-    overflow: hidden;
-}
 
 .popup {
     position: fixed;
@@ -1680,10 +1685,6 @@ body.lock {
 
     .header__list{
         display: none;
-    }
-
-    .basket{
-        margin-right: 50px;
     }
 }
 
@@ -2155,7 +2156,123 @@ body.lock {
 
 }
 
-  
 /* policy-end */
 
+/* Модальные окна старт */
+
+/* Контакты нвчало */
+
+.contacts__content {
+    max-width: 400px;
+    color: #000000;
+}
+
+.contacts__item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacts__item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts__link {
+    font-size: 30px;
+    color: #2e2e2e;
+    transition: 0.3s;
+}
+
+.contacts__link:hover {
+    color: #b17634;
+}
+
+/* Контакты конец */
+
+
+/* Заберу сам начало */
+
+.info__content {
+    max-width: 450px;
+}
+
+.info .popup__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #333333;
+}
+
+.myself__form {
+    width: 100%;
+}
+
+.myself__form > :not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.myself__label {
+    display: block;
+}
+
+.myself__input {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid #929292;
+    transition: 0.3s;
+}
+
+.myself__input:hover {
+    box-shadow: 0px 4px 4px rgba(168, 168, 168, 0.4);
+}
+
+.myself__input::placeholder {
+    color: #929292;
+}
+
+.myself__text {
+    font-size: 17px;
+    color: #333333;
+}
+
+.myself__btn {
+    display: block;
+    margin: auto;
+}
+
+/* Заберу сам конец */
+
+/* Отследить заказ начало */
+
+.track-order__label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.track-order__text {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.track-order__input {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #929292;
+    transition: 0.3s;
+}
+
+.track-order__input:hover {
+    box-shadow: 0px 4px 4px rgba(168, 168, 168, 0.4);
+}
+
+.track-order__btn {
+    display: block;
+    margin: auto;
+}
+
+/* Отследить заказ конец */
 
