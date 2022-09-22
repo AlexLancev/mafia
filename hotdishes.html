@@ -19,7 +19,7 @@
                     <div class="header__body">
 
                         <div class="logo">
-                            <a class="logo-svg__link" href="index.html">
+                            <a href="index.html" class="logo-svg__link">
                                 <img src="images/logo.svg" alt="Логотип компании MAFIA">
                             </a>
                         </div>
@@ -32,9 +32,13 @@
                                 <!-- modal-start -->
                                 <div id="contacts" class="popup contacts info" role="alert">
                                     <div class="popup__body">
-                                        <div class="popup__content info__content">
+                                        <div class="popup__content contacts__content">
                                             <button type="button" class="popup__close close-popup"
                                                 aria-label="закрыть модальное окно"></button>
+
+                                                <h2 class="contacts__title popup__title">
+                                                    Контакты
+                                                </h2>
 
                                             <ul class="contacts__list">
                                                 <li class="contacts__item">
@@ -73,14 +77,20 @@
                                             <button type="button" class="popup__close close-popup"
                                                 aria-label="закрыть модальное окно"></button>
 
+                                            <h2 class="myself__title popup__title">
+                                                Заберу сам 1+1
+                                            </h2>
+
                                             <form class="myself__form" action="#" method="post">
 
-                                                <label class="myself__label">
-                                                    <input type="text" name="myself__client" placeholder="Ваше имя">
+                                                <label class="myself__label" aria-label="Ваше имя">
+                                                    <input class="myself__input" type="text" name="myself__client"
+                                                        placeholder="Ваше имя">
                                                 </label>
 
-                                                <label class="myself__label">
-                                                    <input type="tel" name="myself__phone" placeholder="Номер телефона">
+                                                <label class="myself__label" aria-label="Номер телефона">
+                                                    <input class="myself__input" type="tel" name="myself__phone"
+                                                        placeholder="Номер телефона">
                                                 </label>
 
                                                 <p class="myself__text">
@@ -107,7 +117,7 @@
                                             <button type="button" class="popup__close close-popup"
                                                 aria-label="закрыть модальное окно"></button>
 
-                                            <h2 class="track-order__title">
+                                            <h2 class="track-order__title popup__title">
                                                 Отследить заказ
                                             </h2>
 
@@ -148,198 +158,194 @@
                             </div>
                         </div>
 
+                        <button type="button" aria-label="Меню открыть закрыть" class="header__burger">
+                            <span></span>
+                        </button>
+
+                        <nav class="nav__list-content nav">
+                            <ul>
+            
+                                <li class="nav__item">
+                                    <h2 class="nav__link-title">
+                                        Меню доставки
+                                    </h2>
+                                    <ul class="nav__list-ineer">
+                                        <li class="nav__item-inner">
+                                            <a href="pizza.html" class="nav__link-inner">
+                                                Пицца и пинца
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a href="sushisets.html" class="nav__link-inner">
+                                                Суши и сеты
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a href="salads.html" class="nav__link-inner">
+                                                Салаты и боулы
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a href="burgers.html" class="nav__link-inner">
+                                                Бургеры и закуски
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a href="soups.html" class="nav__link-inner">
+                                                Супы
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner disabled">
+                                                Горячие блюда
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a href="georgiandishes.html" class="nav__link-inner">
+                                                Грузинские блюда
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a href="desserts.html" class="nav__link-inner">
+                                                Десерты
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a href="products.html" class="nav__link-inner">
+                                                Продукты
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a href="beverages.html" class="nav__link-inner">
+                                                Напитки
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+            
+                                <li class="nav__item">
+                                    <h2 class="nav__link-title">
+                                        Для детей
+                                    </h2>
+                                    <ul class="nav__list-ineer">
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Клуб поварят
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Детская комната
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Детский день рождения
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Детское меню
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+            
+                                <li class="nav__item">
+                                    <h2 class="nav__link-title">
+                                        Информация
+                                    </h2>
+                                    <ul class="nav__list-ineer">
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Условия доставки
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Бонусная программа
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Подарочные карты
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Ваш праздник в MAFIA
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                День рождения в MAFIA
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Организация праздников
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+            
+                                <li class="nav__item">
+                                    <h2 class="nav__link-title">
+                                        Компания
+                                    </h2>
+                                    <ul class="nav__list-ineer">
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                О компании
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Вакансии
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Партнерам
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Реклама в MAFIA
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a class="nav__link-inner">
+                                                Пользовательское соглашение
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+            
+                                <li class="nav__item">
+                                    <h2 class="nav__link-title">
+                                        Контакты
+                                    </h2>
+                                    <ul class="nav__list-ineer">
+                                        <li class="nav__item-inner">
+                                            <a href="tel:+380577520330" aria-label="Позвонить нам" class="nav__link-inner">
+                                                (380) 577-520-330
+                                            </a>
+                                        </li>
+                                        <li class="nav__item-inner">
+                                            <a href="tel:+38098337939" aria-label="Позвонить нам" class="nav__link-inner">
+                                                (380) 098-337-939
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
                     </div>
                 </div>
+                
             </header>
-
-            <button type="button" aria-label="Меню открыть закрыть" class="header__burger">
-                <span></span>
-            </button>
-
-            <nav class="header__nav nav">
-                <ul class="nav__list-content">
-
-                    <li class="nav__item">
-                        <h2 class="nav__link-title">
-                            Меню доставки
-                        </h2>
-                        <ul class="nav__list-ineer">
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Пицца и пинца
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a href="sushisets.html" class="nav__link-inner">
-                                    Суши и сеты
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a href="salads.html" class="nav__link-inner">
-                                    Салаты и боулы
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a href="burgers.html" class="nav__link-inner">
-                                    Бургеры и закуски
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a href="soups.html" class="nav__link-inner">
-                                    Супы
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a href="hotdishes.html" class="nav__link-inner">
-                                    Горячие блюда
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a href="georgiandishes.html" class="nav__link-inner">
-                                    Грузинские блюда
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a href="desserts.html" class="nav__link-inner">
-                                    Десерты
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a href="products.html" class="nav__link-inner">
-                                    Продукты
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a href="beverages.html" class="nav__link-inner">
-                                    Напитки
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav__item">
-                        <h2 class="nav__link-title">
-                            Для детей
-                        </h2>
-                        <ul class="nav__list-ineer">
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Клуб поварят
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Детская комната
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Детский день рождения
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Детское меню
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav__item">
-                        <h2 class="nav__link-title">
-                            Информация
-                        </h2>
-                        <ul class="nav__list-ineer">
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Условия доставки
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Бонусная программа
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Услуга "1+1 Забери сам"
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Подарочные карты
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Ваш праздник в MAFIA
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    День рождения в MAFIA
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Организация праздников
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav__item">
-                        <h2 class="nav__link-title">
-                            Компания
-                        </h2>
-                        <ul class="nav__list-ineer">
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    О компании
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Вакансии
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Партнерам
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Реклама в MAFIA
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a class="nav__link-inner">
-                                    Пользовательское соглашение
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav__item">
-                        <h2 class="nav__link-title">
-                            Контакты
-                        </h2>
-                        <ul class="nav__list-ineer">
-                            <li class="nav__item-inner">
-                                <a href="tel:+380577520330" aria-label="Позвонить нам" class="nav__link-inner">
-                                    (380) 577-520-330
-                                </a>
-                            </li>
-                            <li class="nav__item-inner">
-                                <a href="tel:+38098337939" aria-label="Позвонить нам" class="nav__link-inner">
-                                    (380) 098-337-939
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
 
         </div>
 
@@ -402,7 +408,7 @@
                     </a>
                 </li>
                 <li class="header-column__item">
-                    <a class="header-column__link" href="products.html">
+                    <a class="header-column__link" href="desserts.html">
                         <img src="images/delivery-menu/delivery-menu_8.svg" alt="">
                         <span class="header-link__text">
                             Десерты
@@ -410,7 +416,7 @@
                     </a>
                 </li>
                 <li class="header-column__item">
-                    <a class="header-column__link" href="desserts.html">
+                    <a class="header-column__link" href="products.html">
                         <img src="images/delivery-menu/delivery-menu_9.svg" alt="">
                         <span class="header-link__text">
                             Продукты
@@ -2017,11 +2023,89 @@
 
             <div class="footer__body">
 
-                <a class="footer__images-logo">
+                <a href="index.html" class="footer__images-logo">
 
                     <img src="images/logo.svg" alt="Логотип компании MAFIA">
 
                 </a>
+
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#myself-menu" class="nav__link-inner popup-link">
+                            Заберу сам 1+1
+                        </a>
+                        <!-- modal-start -->
+                        <div id="myself-menu" class="popup myself info" role="alert">
+                            <div class="popup__body">
+                                <div class="popup__content info__content">
+                                    <button type="button" class="popup__close close-popup"
+                                        aria-label="закрыть модальное окно"></button>
+    
+                                    <h2 class="myself__title popup__title">
+                                        Заберу сам 1+1
+                                    </h2>
+    
+                                    <form class="myself__form" action="#" method="post">
+    
+                                        <label class="myself__label" aria-label="Ваше имя">
+                                            <input class="myself__input" type="text" name="myself__client"
+                                                placeholder="Ваше имя">
+                                        </label>
+    
+                                        <label class="myself__label" aria-label="Номер телефона">
+                                            <input class="myself__input" type="tel" name="myself__phone"
+                                                placeholder="Номер телефона">
+                                        </label>
+    
+                                        <p class="myself__text">
+                                            Мы свяжемся с вами для уточнения заказа
+                                        </p>
+    
+                                        <button class="myself__btn btn">Отправить</button>
+    
+                                    </form>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal-end -->
+                    </li>
+                    <li class="footer__item">
+                        <a href="#track-order-menu" class="nav__link-inner popup-link">
+                            Отследить заказ
+                        </a>
+                         <!-- modal-start -->
+                        <div id="track-order-menu" class="popup track-order info" role="alert">
+                            <div class="popup__body">
+                                <div class="popup__content info__content">
+                                    <button type="button" class="popup__close close-popup"
+                                        aria-label="закрыть модальное окно"></button>
+    
+                                    <h2 class="track-order__title popup__title">
+                                        Отследить заказ
+                                    </h2>
+    
+                                    <form class="track-order__form" action="#" method="post">
+    
+                                        <label class="track-order__label">
+                                            <span class="track-order__text">
+                                                Введите номер телефона на который был оформлен заказ
+                                            </span>
+                                            <input class="track-order__input" type="tel" name="track-order">
+                                        </label>
+    
+                                        <button class="btn track-order__btn">
+                                            Отследить заказ
+                                        </button>
+    
+                                    </form>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal-end -->
+                    </li>
+                </ul>
 
 
                 <div class="footer__social">
@@ -2069,17 +2153,6 @@
                     </ul>
                 </div>
 
-            </div>
-
-            <div class="rights-reserved">
-                <div class="rights-reserved__info">
-                    <a class="rights-reserved__link">
-                        © 2002 - 2021 MAFIA
-                    </a>
-                    <a href="policy.html" class="rights-reserved__link">
-                        Все права защищены.
-                    </a>
-                </div>
             </div>
 
         </footer>
