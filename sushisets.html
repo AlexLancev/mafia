@@ -350,9 +350,9 @@
         </div>
 
         <div class="header-column">
-            <ul class="header-column__list">
+            <ul class="header-column__list" aria-label="Постраничная навигация">
                 <li class="header-column__item">
-                    <a class="header-column__link" href="pizza.html">
+                    <a class="header-column__link" href="pizza.html" aria-label="Ссылка на страницу Пицца и пинца">
                         <img src="images/delivery-menu/delivery-menu_1.svg" alt="">
                         <span class="header-link__text">
                             Пицца и пинца
@@ -360,7 +360,7 @@
                     </a>
                 </li>
                 <li class="header-column__item active">
-                    <a class="header-column__link header-column__link--active">
+                    <a class="header-column__link header-column__link--active" aria-label="Ссылка на страницу Суши и сеты">
                         <img src="images/delivery-menu/delivery-menu_2.svg" alt="">
                         <span class="header-link__text">
                             Суши и сеты
@@ -368,7 +368,7 @@
                     </a>
                 </li>
                 <li class="header-column__item">
-                    <a class="header-column__link" href="salads.html">
+                    <a class="header-column__link" href="salads.html" aria-label="Ссылка на страницу Салаты и боулы">
                         <img src="images/delivery-menu/delivery-menu_3.svg" alt="">
                         <span class="header-link__text">
                             Салаты и боулы
@@ -376,7 +376,7 @@
                     </a>
                 </li>
                 <li class="header-column__item">
-                    <a class="header-column__link" href="burgers.html">
+                    <a class="header-column__link" href="burgers.html" aria-label="Ссылка на страницу Бургеры и закуски">
                         <img src="images/delivery-menu/delivery-menu_4.svg" alt="">
                         <span class="header-link__text">
                             Бургеры и закуски
@@ -384,7 +384,7 @@
                     </a>
                 </li>
                 <li class="header-column__item">
-                    <a class="header-column__link" href="soups.html">
+                    <a class="header-column__link" href="soups.html" aria-label="Ссылка на страницу Супы">
                         <img src="images/delivery-menu/delivery-menu_5.svg" alt="">
                         <span class="header-link__text">
                             Супы
@@ -392,7 +392,7 @@
                     </a>
                 </li>
                 <li class="header-column__item">
-                    <a class="header-column__link" href="hotdishes.html">
+                    <a class="header-column__link" href="hotdishes.html" aria-label="Ссылка на страницу Горячие блюда">
                         <img src="images/delivery-menu/delivery-menu_6.svg" alt="">
                         <span class="header-link__text">
                             Горячие блюда
@@ -400,7 +400,7 @@
                     </a>
                 </li>
                 <li class="header-column__item">
-                    <a class="header-column__link" href="georgiandishes.html">
+                    <a class="header-column__link" href="georgiandishes.html" aria-label="Ссылка на страницу Грузинские блюда">
                         <img src="images/delivery-menu/delivery-menu_7.svg" alt="">
                         <span class="header-link__text">
                             Грузинские блюда
@@ -408,7 +408,7 @@
                     </a>
                 </li>
                 <li class="header-column__item">
-                    <a class="header-column__link" href="desserts.html">
+                    <a class="header-column__link" href="desserts.html" aria-label="Ссылка на страницу Десерты">
                         <img src="images/delivery-menu/delivery-menu_8.svg" alt="">
                         <span class="header-link__text">
                             Десерты
@@ -416,7 +416,7 @@
                     </a>
                 </li>
                 <li class="header-column__item">
-                    <a class="header-column__link" href="products.html">
+                    <a class="header-column__link" href="products.html" aria-label="Ссылка на страницу Продукты">
                         <img src="images/delivery-menu/delivery-menu_9.svg" alt="">
                         <span class="header-link__text">
                             Продукты
@@ -424,7 +424,7 @@
                     </a>
                 </li>
                 <li class="header-column__item">
-                    <a class="header-column__link" href="beverages.html">
+                    <a class="header-column__link" href="beverages.html" aria-label="Ссылка на страницу Напитки">
                         <img src="images/delivery-menu/delivery-menu_10.svg" alt="">
                         <span class="header-link__text">
                             Напитки
@@ -473,7 +473,7 @@
                                         <span class="menu-service__span">Акция</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-1" class="menu__images-link popup-link">
+                                        <a href="#sushi-1" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets-1.jpg" alt="Сет ролл Биг Фиш">
                                             </figure>
@@ -525,16 +525,18 @@
                                                             </h4>
                                                             <div class="popup__pizza-additives">
 
-                                                                <div class="label-check">
-                                                                    <label class="label-checkbox">
-                                                                        <input type="checkbox" name="BigFishXXL[]"
-                                                                            value="cidreroyal">
-                                                                        <span class="checkbox__text-descriptions">
-                                                                            <b>Cidre Royal</b>
-                                                                            <b>+50 руб</b>
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
+                                                                <ul class="label-check" aria-label="Добавки к пицце">
+                                                                    <li>
+                                                                        <label class="label-checkbox">
+                                                                            <input type="checkbox" name="BigFishXXL[]"
+                                                                                value="cidreroyal">
+                                                                            <span class="checkbox__text-descriptions">
+                                                                                <b>Cidre Royal</b>
+                                                                                <b>+50 руб</b>
+                                                                            </span>
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
 
                                                             </div>
                                                             <div class="menu__price">
@@ -582,16 +584,18 @@
                                             Ролл №6: Ролл с курицей панко, сыром филадельфия, сладким перцем, огурцом и
                                             салатом ромэн в сыре чеддер и соусом спайси
                                         </div>
-                                        <div class="label-check">
-                                            <label class="label-checkbox" for="BigFishXXL-cidreroyal">
-                                                <input type="checkbox" name="BigFishXXL[]" id="BigFishXXL-cidreroyal"
-                                                    value="cidreroyal">
-                                                <span class="checkbox__text-descriptions">
-                                                    <span>Cidre Royal</span>
-                                                    <span>+50 руб</span>
-                                                </span>
-                                            </label>
-                                        </div>
+                                        <ul class="label-check" aria-label="Добавки к пицце">
+                                            <li>
+                                                <label class="label-checkbox" for="BigFishXXL-cidreroyal">
+                                                    <input type="checkbox" name="BigFishXXL[]" id="BigFishXXL-cidreroyal"
+                                                        value="cidreroyal">
+                                                    <span class="checkbox__text-descriptions">
+                                                        <span>Cidre Royal</span>
+                                                        <span>+50 руб</span>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
                                             <div class="menu__price">
@@ -609,7 +613,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-2" class="menu__images-link popup-link">
+                                        <a href="#sushi-2" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_2.jpg" alt="Сет ролл Биг Фиш">
                                             </figure>
@@ -661,16 +665,18 @@
                                                             </h4>
                                                             <div class="popup__pizza-additives">
 
-                                                                <div class="label-check">
-                                                                    <label class="label-checkbox">
-                                                                        <input type="checkbox" name="BigFishXXL[]"
-                                                                            value="cidreroyal">
-                                                                        <span class="checkbox__text-descriptions">
-                                                                            <b>Cidre Royal</b>
-                                                                            <b>+50 руб</b>
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
+                                                                <ul class="label-check" aria-label="Добавки к пицце">
+                                                                    <li>
+                                                                        <label class="label-checkbox">
+                                                                            <input type="checkbox" name="BigFishXXL[]"
+                                                                                value="cidreroyal">
+                                                                            <span class="checkbox__text-descriptions">
+                                                                                <b>Cidre Royal</b>
+                                                                                <b>+50 руб</b>
+                                                                            </span>
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
 
                                                             </div>
                                                             <div class="menu__price">
@@ -715,16 +721,19 @@
                                             Ролл №6: Ролл с курицей панко, сыром филадельфия, сладким перцем, огурцом и
                                             салатом ромэн в сыре чеддер и соусом спайси
                                         </div>
-                                        <div class="label-check">
-                                            <label class="label-checkbox" for="BigFishXL-cidreroyal">
-                                                <input type="checkbox" name="BigFishXL[]" id="BigFishXL-cidreroyal"
-                                                    value="cidreroyal">
-                                                <span class="checkbox__text-descriptions">
-                                                    <b>Cidre Royal</b>
-                                                    <b>+50 руб</b>
-                                                </span>
-                                            </label>
-                                        </div>
+                                        <ul class="label-check" aria-label="Добавки к пицце">
+                                            <li>
+                                                <label class="label-checkbox" for="BigFishXL-cidreroyal">
+                                                    <input type="checkbox" name="BigFishXL[]" id="BigFishXL-cidreroyal"
+                                                        value="cidreroyal">
+                                                    <span class="checkbox__text-descriptions">
+                                                        <b>Cidre Royal</b>
+                                                        <b>+50 руб</b>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            
+                                        </ul>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
                                             <div class="menu__price">
@@ -739,7 +748,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-3" class="menu__images-link popup-link">
+                                        <a href="#sushi-3" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_3.jpg" alt="Сет ролл Биг Фиш">
                                             </figure>
@@ -789,16 +798,19 @@
                                                             </h4>
                                                             <div class="popup__pizza-additives">
 
-                                                                <div class="label-check">
-                                                                    <label class="label-checkbox">
-                                                                        <input type="checkbox" name="BigFishXXL[]"
-                                                                            value="cidreroyal">
-                                                                        <span class="checkbox__text-descriptions">
-                                                                            <b>Cidre Royal</b>
-                                                                            <b>+50 руб</b>
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
+                                                                <ul class="label-check" aria-label="Добавки к пицце">
+                                                                    <li>
+                                                                        <label class="label-checkbox">
+                                                                            <input type="checkbox" name="BigFishXXL[]"
+                                                                                value="cidreroyal">
+                                                                            <span class="checkbox__text-descriptions">
+                                                                                <b>Cidre Royal</b>
+                                                                                <b>+50 руб</b>
+                                                                            </span>
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                </ul>
 
                                                             </div>
                                                             <div class="menu__price">
@@ -840,16 +852,19 @@
                                             Ролл №5: Ролл с курицей панко, сыром филадельфия, сладким перцем, огурцом и
                                             салатом ромэн в сыре чеддер и соусом спайси
                                         </div>
-                                        <div class="label-check">
-                                            <label class="label-checkbox" for="BigFishL-cidreroyal">
-                                                <input type="checkbox" name="BigFishL[]" id="BigFishL-cidreroyal"
-                                                    value="cidreroyal">
-                                                <span class="checkbox__text-descriptions">
-                                                    <b>Cidre Royal</b>
-                                                    <b>+50 руб</b>
-                                                </span>
-                                            </label>
-                                        </div>
+                                        <ul class="label-check" aria-label="Добавки к пицце">
+                                            <li>
+                                                <label class="label-checkbox" for="BigFishL-cidreroyal">
+                                                    <input type="checkbox" name="BigFishL[]" id="BigFishL-cidreroyal"
+                                                        value="cidreroyal">
+                                                    <span class="checkbox__text-descriptions">
+                                                        <b>Cidre Royal</b>
+                                                        <b>+50 руб</b>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            
+                                        </ul>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
                                             <div class="menu__price">
@@ -866,7 +881,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-4" class="menu__images-link popup-link">
+                                        <a href="#sushi-4" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_4.jpg" alt="Сет ролл Драгон">
                                             </figure>
@@ -939,16 +954,19 @@
                                                             </h4>
                                                             <div class="popup__pizza-additives">
 
-                                                                <div class="label-check">
-                                                                    <label class="label-checkbox">
-                                                                        <input type="checkbox" name="BigFishXXL[]"
-                                                                            value="cidreroyal">
-                                                                        <span class="checkbox__text-descriptions">
-                                                                            <b>Fratelli Fragolino Bianco</b>
-                                                                            <b>+50 руб</b>
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
+                                                                <ul class="label-check" aria-label="Добавки к пицце">
+                                                                    <li>
+                                                                        <label class="label-checkbox">
+                                                                            <input type="checkbox" name="BigFishXXL[]"
+                                                                                value="cidreroyal">
+                                                                            <span class="checkbox__text-descriptions">
+                                                                                <b>Fratelli Fragolino Bianco</b>
+                                                                                <b>+50 руб</b>
+                                                                            </span>
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                </ul>
 
                                                             </div>
                                                             <div class="menu__price">
@@ -1013,17 +1031,20 @@
 
                                             Маки с чукой, кунжутом и соусом спайси.
                                         </div>
-                                        <div class="label-check">
-                                            <label class="label-checkbox" for="DragonXXL-FratelliFragolinoBianco">
-                                                <input type="checkbox" name="DragonXXL[]"
-                                                    id="DragonXXL-FratelliFragolinoBianco"
-                                                    value="FratelliFragolinoBianco">
-                                                <span class="checkbox__text-descriptions">
-                                                    <b>Fratelli Fragolino Bianco</b>
-                                                    <b>+50 руб</b>
-                                                </span>
-                                            </label>
-                                        </div>
+                                        <ul class="label-check" aria-label="Добавки к пицце">
+                                            <li>
+                                                <label class="label-checkbox" for="DragonXXL-FratelliFragolinoBianco">
+                                                    <input type="checkbox" name="DragonXXL[]"
+                                                        id="DragonXXL-FratelliFragolinoBianco"
+                                                        value="FratelliFragolinoBianco">
+                                                    <span class="checkbox__text-descriptions">
+                                                        <b>Fratelli Fragolino Bianco</b>
+                                                        <b>+50 руб</b>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            
+                                        </ul>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
                                             <div class="menu__price">
@@ -1040,7 +1061,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-5" class="menu__images-link popup-link">
+                                        <a href="#sushi-5" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_5.jpg" alt="Сет ролл Драгон">
                                             </figure>
@@ -1118,16 +1139,19 @@
                                                             </h4>
                                                             <div class="popup__pizza-additives">
 
-                                                                <div class="label-check">
-                                                                    <label class="label-checkbox">
-                                                                        <input type="checkbox" name="BigFishXXL[]"
-                                                                            value="cidreroyal">
-                                                                        <span class="checkbox__text-descriptions">
-                                                                            <b>Fratelli Fragolino Bianco</b>
-                                                                            <b>+50 руб</b>
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
+                                                                <ul class="label-check" aria-label="Добавки к пицце">
+                                                                    <li>
+                                                                        <label class="label-checkbox">
+                                                                            <input type="checkbox" name="BigFishXXL[]"
+                                                                                value="cidreroyal">
+                                                                            <span class="checkbox__text-descriptions">
+                                                                                <b>Fratelli Fragolino Bianco</b>
+                                                                                <b>+50 руб</b>
+                                                                            </span>
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                </ul>
 
                                                             </div>
                                                             <div class="menu__price">
@@ -1197,17 +1221,20 @@
 
                                             Маки с чукой, кунжутом и соусом спайси.
                                         </div>
-                                        <div class="label-check">
-                                            <label class="label-checkbox" for="DragonXXXL-FratelliFragolinoBianco">
-                                                <input type="checkbox" name="DragonXXXL[]"
-                                                    id="DragonXXXL-FratelliFragolinoBianco"
-                                                    value="FratelliFragolinoBianco">
-                                                <span class="checkbox__text-descriptions">
-                                                    <b>Fratelli Fragolino Bianco</b>
-                                                    <b>+50 руб</b>
-                                                </span>
-                                            </label>
-                                        </div>
+                                        <ul class="label-check" aria-label="Добавки к пицце">
+                                            <li>
+                                                <label class="label-checkbox" for="DragonXXXL-FratelliFragolinoBianco">
+                                                    <input type="checkbox" name="DragonXXXL[]"
+                                                        id="DragonXXXL-FratelliFragolinoBianco"
+                                                        value="FratelliFragolinoBianco">
+                                                    <span class="checkbox__text-descriptions">
+                                                        <b>Fratelli Fragolino Bianco</b>
+                                                        <b>+50 руб</b>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            
+                                        </ul>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
                                             <div class="menu__price">
@@ -1230,7 +1257,7 @@
                                         <span class="menu-service__span menu-service__span-hit">Хит</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-6" class="menu__images-link popup-link">
+                                        <a href="#sushi-6" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_6.jpg" alt="Сет ролл Драгон">
                                             </figure>
@@ -1297,16 +1324,19 @@
                                                             </h4>
                                                             <div class="popup__pizza-additives">
 
-                                                                <div class="label-check">
-                                                                    <label class="label-checkbox">
-                                                                        <input type="checkbox" name="BigFishXXL[]"
-                                                                            value="cidreroyal">
-                                                                        <span class="checkbox__text-descriptions">
-                                                                            <b>Fratelli Fragolino Bianco</b>
-                                                                            <b>+50 руб</b>
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
+                                                                <ul class="label-check" aria-label="Добавки к пицце">
+                                                                    <li>
+                                                                        <label class="label-checkbox">
+                                                                            <input type="checkbox" name="BigFishXXL[]"
+                                                                                value="cidreroyal">
+                                                                            <span class="checkbox__text-descriptions">
+                                                                                <b>Fratelli Fragolino Bianco</b>
+                                                                                <b>+50 руб</b>
+                                                                            </span>
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                </ul>
 
                                                             </div>
                                                             <div class="menu__price">
@@ -1369,17 +1399,20 @@
 
                                             Маки с чукой, кунжутом и соусом спайси.
                                         </div>
-                                        <div class="label-check">
-                                            <label class="label-checkbox" for="DragonXL-FratelliFragolinoBianco">
-                                                <input type="checkbox" name="DragonXL[]"
-                                                    id="DragonXL-FratelliFragolinoBianco"
-                                                    value="FratelliFragolinoBianco">
-                                                <span class="checkbox__text-descriptions">
-                                                    <b>Fratelli Fragolino Bianco</b>
-                                                    <b>+50 руб</b>
-                                                </span>
-                                            </label>
-                                        </div>
+                                        <ul class="label-check" aria-label="Добавки к пицце">
+                                            <li>
+                                                <label class="label-checkbox" for="DragonXL-FratelliFragolinoBianco">
+                                                    <input type="checkbox" name="DragonXL[]"
+                                                        id="DragonXL-FratelliFragolinoBianco"
+                                                        value="FratelliFragolinoBianco">
+                                                    <span class="checkbox__text-descriptions">
+                                                        <b>Fratelli Fragolino Bianco</b>
+                                                        <b>+50 руб</b>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            
+                                        </ul>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
                                             <div class="menu__price">
@@ -1408,7 +1441,7 @@
                                             <span class="menu-service__span menu-service__span-black">Скоро
                                                 появится</span>
                                         </div>
-                                        <a href="#sushi-7" class="menu__images-link popup-link">
+                                        <a href="#sushi-7" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img class="menu__notavailable" src="images/sushi-sets/sushi-sets_7.jpg"
                                                     alt="Сет ролл Мафия">
@@ -1549,7 +1582,7 @@
                                         <span class="menu-service__span menu-service__span-black">Скоро появится</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-8" class="menu__images-link popup-link">
+                                        <a href="#sushi-8" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img class="menu__notavailable" src="images/sushi-sets/sushi-sets_8.jpg"
                                                     alt="Сет ролл Мафия">
@@ -1699,7 +1732,7 @@
                                         <span class="menu-service__span menu-service__span-black">Скоро появится</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-9" class="menu__images-link popup-link">
+                                        <a href="#sushi-9" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img class="menu__notavailable" src="images/sushi-sets/sushi-sets_9.jpg"
                                                     alt="Сет ролл Мафия">
@@ -1857,7 +1890,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-10" class="menu__images-link popup-link">
+                                        <a href="#sushi-10" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_10.jpg"
                                                     alt="Сет ролл Лосось Лосось">
@@ -1906,16 +1939,19 @@
                                                             </h4>
                                                             <div class="popup__pizza-additives">
 
-                                                                <div class="label-check">
-                                                                    <label class="label-checkbox">
-                                                                        <input type="checkbox" name="BigFishXXL[]"
-                                                                            value="cidreroyal">
-                                                                        <span class="checkbox__text-descriptions">
-                                                                            <b>Fratelli Fragolino Bianco</b>
-                                                                            <b>+50 руб</b>
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
+                                                                <ul class="label-check" aria-label="Добавки к пицце">
+                                                                    <li>
+                                                                        <label class="label-checkbox">
+                                                                            <input type="checkbox" name="BigFishXXL[]"
+                                                                                value="cidreroyal">
+                                                                            <span class="checkbox__text-descriptions">
+                                                                                <b>Fratelli Fragolino Bianco</b>
+                                                                                <b>+50 руб</b>
+                                                                            </span>
+                                                                        </label>
+                                                                    </li>
+                                                                    
+                                                                </ul>
                                                             </div>
                                                             <div class="menu__price">
 
@@ -1957,17 +1993,20 @@
                                             Ролл №6: Ролл c филе лосося, сыром Филадельфия, Тамаго, огурцом и соусом
                                             манго-чили
                                         </div>
-                                        <div class="label-check">
-                                            <label class="label-checkbox" for="salmonXL-FratelliFragolinoBianco">
-                                                <input type="checkbox" name="salmonL[]"
-                                                    id="salmonXL-FratelliFragolinoBianco"
-                                                    value="FratelliFragolinoBianco">
-                                                <span class="checkbox__text-descriptions">
-                                                    <b>Fratelli Fragolino Bianco</b>
-                                                    <b>+50 руб</b>
-                                                </span>
-                                            </label>
-                                        </div>
+                                        <ul class="label-check" aria-label="Добавки к пицце">
+                                            <li>
+                                                <label class="label-checkbox" for="salmonXL-FratelliFragolinoBianco">
+                                                    <input type="checkbox" name="salmonL[]"
+                                                        id="salmonXL-FratelliFragolinoBianco"
+                                                        value="FratelliFragolinoBianco">
+                                                    <span class="checkbox__text-descriptions">
+                                                        <b>Fratelli Fragolino Bianco</b>
+                                                        <b>+50 руб</b>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            
+                                        </ul>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
                                             <div class="menu__price">
@@ -1990,7 +2029,7 @@
                                         <span class="menu-service__span menu-service__span-hit">Хит</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-11" class="menu__images-link popup-link">
+                                        <a href="#sushi-11" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_11.jpg"
                                                     alt="Сет ролл Лосось Лосось">
@@ -2100,7 +2139,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-12" class="menu__images-link popup-link">
+                                        <a href="#sushi-12" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_12.jpg"
                                                     alt="Сет ролл Лосось Лосось">
@@ -2208,7 +2247,7 @@
                                         <span class="menu-service__span menu-service__span-hit">Хит</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-13" class="menu__images-link popup-link">
+                                        <a href="#sushi-13" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_13.jpg"
                                                     alt="Сет ролл Супер Фила">
@@ -2296,7 +2335,7 @@
                                         <span class="menu-service__span">Акция</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-14" class="menu__images-link popup-link">
+                                        <a href="#sushi-14" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_14.jpg"
                                                     alt="Сет ролл Супер Фила">
@@ -2384,7 +2423,7 @@
                                         <span class="menu-service__span">Акция</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-15" class="menu__images-link popup-link">
+                                        <a href="#sushi-15" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_15.jpg"
                                                     alt="Сет ролл Супер Фила">
@@ -2477,7 +2516,7 @@
                                         <span class="menu-service__span menu-service__span-green">Новинка</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-16" class="menu__images-link popup-link">
+                                        <a href="#sushi-16" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_16.jpg" alt="Атлантик сет">
                                             </figure>
@@ -2607,7 +2646,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-17" class="menu__images-link popup-link">
+                                        <a href="#sushi-17" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_17.jpg" alt="Сет ролл Дабл фила">
                                             </figure>
@@ -2683,7 +2722,7 @@
                                         <span class="menu-service__span">Акция</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-18" class="menu__images-link popup-link">
+                                        <a href="#sushi-18" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_18.jpg"
                                                     alt="Сет ролл Лосось полюбе">
@@ -2769,7 +2808,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-19" class="menu__images-link popup-link">
+                                        <a href="#sushi-19" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_19.jpg" alt="Филадельфия сет">
                                             </figure>
@@ -2830,17 +2869,20 @@
                                             Ролл Филадельфия классическая, Феликс ролл с лососем-кунцей, ролл Калифорния
                                             классическая, Авокадо ролл, ролл Филадельфия спайси-кунцей
                                         </div>
-                                        <div class="label-check">
-                                            <label class="label-checkbox" for="Philadelphia-FratelliFragolinoBianco">
-                                                <input type="checkbox" name="Philadelphia[]"
-                                                    id="Philadelphia-FratelliFragolinoBianco"
-                                                    value="FratelliFragolinoBianco">
-                                                <span class="checkbox__text-descriptions">
-                                                    <b>Fratelli Fragolino Bianco</b>
-                                                    <b>+50 руб</b>
-                                                </span>
-                                            </label>
-                                        </div>
+                                        <ul class="label-check" aria-label="Добавки к пицце">
+                                            <li>
+                                                <label class="label-checkbox" for="Philadelphia-FratelliFragolinoBianco">
+                                                    <input type="checkbox" name="Philadelphia[]"
+                                                        id="Philadelphia-FratelliFragolinoBianco"
+                                                        value="FratelliFragolinoBianco">
+                                                    <span class="checkbox__text-descriptions">
+                                                        <b>Fratelli Fragolino Bianco</b>
+                                                        <b>+50 руб</b>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            
+                                        </ul>
                                         <span class="span-decor"></span>
                                         <div class="menu__order">
                                             <div class="menu__price">
@@ -2857,7 +2899,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-20" class="menu__images-link popup-link">
+                                        <a href="#sushi-20" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_20.jpg" alt="Сет Фирменный">
                                             </figure>
@@ -2933,7 +2975,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-21" class="menu__images-link popup-link">
+                                        <a href="#sushi-21" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_21.jpg"
                                                     alt="Филадельфия классическая">
@@ -3009,7 +3051,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-22" class="menu__images-link popup-link">
+                                        <a href="#sushi-22" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_22.jpg" alt="Сет ролл Капа маки">
                                             </figure>
@@ -3082,7 +3124,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-23" class="menu__images-link popup-link">
+                                        <a href="#sushi-23" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_23.jpg" alt="Сет ролл Сяке маки">
                                             </figure>
@@ -3158,7 +3200,7 @@
                                         <span class="menu-service__span">Акция</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-24" class="menu__images-link popup-link">
+                                        <a href="#sushi-24" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_24.jpg" alt="Сет ролл 
                                                 Чизу чикен с соусом спайси">
@@ -3242,7 +3284,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-25" class="menu__images-link popup-link">
+                                        <a href="#sushi-25" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_25.jpg" alt="Сет ролл 
                                                 Авокадо ролл">
@@ -3319,7 +3361,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-26" class="menu__images-link popup-link">
+                                        <a href="#sushi-26" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_26.jpg" alt="Сет ролл 
                                                 Вега">
@@ -3396,7 +3438,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-27" class="menu__images-link popup-link">
+                                        <a href="#sushi-27" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_27.jpg" alt="Сет ролл 
                                                 Филадельфия макси">
@@ -3472,7 +3514,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-28" class="menu__images-link popup-link">
+                                        <a href="#sushi-28" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_28.jpg" alt="Сет ролл 
                                                 Зеленый дракон">
@@ -3549,7 +3591,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-29" class="menu__images-link popup-link">
+                                        <a href="#sushi-29" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_29.jpg" alt="Сет ролл 
                                                 Красный дракон">
@@ -3629,7 +3671,7 @@
                                         <span class="menu-service__span">Акция</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-30" class="menu__images-link popup-link">
+                                        <a href="#sushi-30" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_30.jpg"
                                                     alt="Феликс ролл с лососем-кунцей">
@@ -3714,7 +3756,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-31" class="menu__images-link popup-link">
+                                        <a href="#sushi-31" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_31.jpg" alt="Сет ролл 
                                                 Сякэ">
@@ -3788,7 +3830,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-32" class="menu__images-link popup-link">
+                                        <a href="#sushi-32" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_32.jpg" alt="Сет ролл 
                                                 Унаги">
@@ -3862,7 +3904,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-33" class="menu__images-link popup-link">
+                                        <a href="#sushi-33" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_33.jpg" alt="Сет ролл 
                                                 Гункан сякэ">
@@ -3936,7 +3978,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-34" class="menu__images-link popup-link">
+                                        <a href="#sushi-34" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_34.jpg" alt="Сет ролл 
                                                 Гункан тобико">
@@ -4010,7 +4052,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-35" class="menu__images-link popup-link">
+                                        <a href="#sushi-35" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_35.jpg" alt="Сет ролл 
                                                 Премиум">
@@ -4103,7 +4145,7 @@
                                         <span class="menu-service__span">1 + 1</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-36" class="menu__images-link popup-link">
+                                        <a href="#sushi-36" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_36.jpg" alt="Сет ролл 
                                                 Премиум">
@@ -4193,7 +4235,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-37" class="menu__images-link popup-link">
+                                        <a href="#sushi-37" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_37.jpg" alt="Сет ролл 
                                                 Сити Стар">
@@ -4280,7 +4322,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-38" class="menu__images-link popup-link">
+                                        <a href="#sushi-38" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_38.jpg" alt="Сет ролл 
                                                 Сити Стар">
@@ -4367,7 +4409,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-39" class="menu__images-link popup-link">
+                                        <a href="#sushi-39" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_39.jpg"
                                                     alt="Ролл с лососем и кампиo">
@@ -4444,7 +4486,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-40" class="menu__images-link popup-link">
+                                        <a href="#sushi-40" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_40.jpg" alt="Сет ролл 
                                                 Спайси сяке темпура">
@@ -4521,7 +4563,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-41" class="menu__images-link popup-link">
+                                        <a href="#sushi-41" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_41.jpg" alt="Сет ролл 
                                                 Калифорния сякэ">
@@ -4599,7 +4641,7 @@
                                         <span class="menu-service__span">Акция</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-42" class="menu__images-link popup-link">
+                                        <a href="#sushi-42" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_42.jpg" alt="Сет ролл 
                                                 Лосось-краб">
@@ -4685,7 +4727,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-43" class="menu__images-link popup-link">
+                                        <a href="#sushi-43" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_43.jpg"
                                                     alt="Ролл с маринованным лососем и эби темпура">
@@ -4764,7 +4806,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-44" class="menu__images-link popup-link">
+                                        <a href="#sushi-44" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_44.jpg" alt="Сет ролл 
                                                 Тайский лосось">
@@ -4843,7 +4885,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-45" class="menu__images-link popup-link">
+                                        <a href="#sushi-45" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_45.jpg" alt="Сет ролл 
                                                 Унаги-краб">
@@ -4920,7 +4962,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-46" class="menu__images-link popup-link">
+                                        <a href="#sushi-46" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_46.jpg" alt="Сет ролл 
                                                 4 сыра">
@@ -4997,7 +5039,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-47" class="menu__images-link popup-link">
+                                        <a href="#sushi-47" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_47.jpg"
                                                     alt="Ролл с лососем и кампиo">
@@ -5074,7 +5116,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-48" class="menu__images-link popup-link">
+                                        <a href="#sushi-48" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_48.jpg" alt="Сет ролл 
                                                 Филадельфия спайси-кунцей">
@@ -5155,7 +5197,7 @@
                                         <span class="menu-service__span menu-service__span-hit">Хит</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-49" class="menu__images-link popup-link">
+                                        <a href="#sushi-49" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_49.jpg" alt="Сет ролл 
                                                 Лососевый">
@@ -5240,7 +5282,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-50" class="menu__images-link popup-link">
+                                        <a href="#sushi-50" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_50.jpg" alt="Сет ролл 
                                                 Тайский лосось">
@@ -5322,7 +5364,7 @@
                                         <span class="menu-service__span menu-service__span-green">Новинка</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-51" class="menu__images-link popup-link">
+                                        <a href="#sushi-51" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_51.jpg"
                                                     alt="Сет роллов Праздничный">
@@ -5400,7 +5442,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-52" class="menu__images-link popup-link">
+                                        <a href="#sushi-52" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_52.jpg"
                                                     alt="Сет ролл Гункан кунцей спайси">
@@ -5474,7 +5516,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-53" class="menu__images-link popup-link">
+                                        <a href="#sushi-53" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_53.jpg" alt="Сет ролл  Мафия">
                                             </figure>
@@ -5550,7 +5592,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-54" class="menu__images-link popup-link">
+                                        <a href="#sushi-54" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_54.jpg"
                                                     alt="Сет ролл Золотой дракон">
@@ -5627,7 +5669,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-55" class="menu__images-link popup-link">
+                                        <a href="#sushi-55" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_55.jpg"
                                                     alt="Сет ролл Гункан унаги кунцей спайси">
@@ -5707,7 +5749,7 @@
                                         <span class="menu-service__span menu-service__span-hit">1 + 1</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-56" class="menu__images-link popup-link">
+                                        <a href="#sushi-56" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_56.jpg"
                                                     alt="Феликс ролл с лососем-кунцей">
@@ -5784,7 +5826,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-57" class="menu__images-link popup-link">
+                                        <a href="#sushi-57" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_57.jpg"
                                                     alt="Сет ролл Гункан унаги спайси">
@@ -5858,7 +5900,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-58" class="menu__images-link popup-link">
+                                        <a href="#sushi-58" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_58.jpg"
                                                     alt="Сет ролл Гункан унаги сяке спайси">
@@ -5932,7 +5974,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-59" class="menu__images-link popup-link">
+                                        <a href="#sushi-59" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_59.jpg"
                                                     alt="Сет ролл Гункан чука">
@@ -6012,7 +6054,7 @@
                                         <span class="menu-service__span menu-service__span-hit">Хит</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-60" class="menu__images-link popup-link">
+                                        <a href="#sushi-60" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_60.jpg"
                                                     alt="Сет ролл Филадельфия спайси-кунцей">
@@ -6089,7 +6131,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-61" class="menu__images-link popup-link">
+                                        <a href="#sushi-61" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_61.jpg" alt="Сет ролл Суши Эби">
                                             </figure>
@@ -6162,7 +6204,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-62" class="menu__images-link popup-link">
+                                        <a href="#sushi-62" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_62.jpg" alt="Суши кунцей">
                                             </figure>
@@ -6235,7 +6277,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-63" class="menu__images-link popup-link">
+                                        <a href="#sushi-63" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_63.jpg"
                                                     alt="Сет ролл Сяке но филадельфия">
@@ -6312,7 +6354,7 @@
                                         <span class="menu-service__span">1 + 1</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-64" class="menu__images-link popup-link">
+                                        <a href="#sushi-64" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_64.jpg"
                                                     alt="Сет ролл Филадельфия макси">
@@ -6391,7 +6433,7 @@
                                         <span class="menu-service__span">1 + 1</span>
                                     </div>
                                     <div class="menu__item">
-                                        <a href="#sushi-65" class="menu__images-link popup-link">
+                                        <a href="#sushi-65" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_65.jpg"
                                                     alt="Сет ролл Калифорния унаги-кунцей">
@@ -6467,7 +6509,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-66" class="menu__images-link popup-link">
+                                        <a href="#sushi-66" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_66.jpg"
                                                     alt="Сет ролл Унаги-кунцей филадельфия">
@@ -6543,7 +6585,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-67" class="menu__images-link popup-link">
+                                        <a href="#sushi-67" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_67.jpg" alt="Сет ролл Презент">
                                             </figure>
@@ -6628,7 +6670,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-68" class="menu__images-link popup-link">
+                                        <a href="#sushi-68" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_68.jpg"
                                                     alt="Сет ролл Калифорния с сурими">
@@ -6704,7 +6746,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-69" class="menu__images-link popup-link">
+                                        <a href="#sushi-69" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_69.jpg"
                                                     alt="Сет ролл Калифорния унаги-кунцей">
@@ -6780,7 +6822,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-70" class="menu__images-link popup-link">
+                                        <a href="#sushi-70" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_70.jpg"
                                                     alt="Сет ролл Сяке маки спайси">
@@ -6854,7 +6896,7 @@
 
                                 <div class="menu__column">
                                     <div class="menu__item">
-                                        <a href="#sushi-71" class="menu__images-link popup-link">
+                                        <a href="#sushi-71" class="menu__images-link popup-link" aria-label="Открыть модальное окно с карточкой товара">
                                             <figure class="menu__images">
                                                 <img src="images/sushi-sets/sushi-sets_71.jpg"
                                                     alt="Сет ролл Унаги кунцей маки">
