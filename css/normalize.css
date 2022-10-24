@@ -207,6 +207,12 @@
   /**
    * Correct the inability to style clickable types in iOS and Safari.
    */
+
+   button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+   }
   
   button,
   [type="button"],
@@ -262,6 +268,7 @@
     max-width: 100%; /* 1 */
     padding: 0; /* 3 */
     white-space: normal; /* 1 */
+    margin: auto;
   }
   
   /**

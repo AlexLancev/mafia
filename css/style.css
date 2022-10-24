@@ -422,6 +422,7 @@ button {
 }
 
 .header-list__link {
+    color: #ffffff;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -469,6 +470,7 @@ button {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 .backet__link-svg svg {
@@ -540,6 +542,7 @@ button {
 }
 
 .nav__link-inner {
+    color: #ffffff;
     font-size: 18px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
