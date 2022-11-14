@@ -60,12 +60,3 @@ $(function () {
   });
 
 });
-
-
-
-
-const headerBody = document.querySelector('.header__content');
-const headerColumn = document.querySelector('.header-column');
-const heightBody = headerBody.offsetHeight;
-
-headerColumn.style.top = heightBody + 'px';
